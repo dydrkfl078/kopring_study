@@ -2,13 +2,15 @@ package prac2.core.order
 
 import prac2.core.discount.DiscountPolicy
 import prac2.core.discount.FixDiscountPolicy
+import prac2.core.discount.RateDiscountPolicy
 import prac2.core.repository.MemberRepo
 import prac2.core.repository.MemoryMemberRepo
 
-class OrderServiceImpl: OrderService {
+class OrderServiceImpl(private val memberRepo: MemberRepo, private val discountPolicy: DiscountPolicy): OrderService {
 
-    private val memberRepo : MemberRepo = MemoryMemberRepo()
-    private val discountPolicy : DiscountPolicy = FixDiscountPolicy()
+//    private val memberRepo : MemberRepo = MemoryMemberRepo()
+//    private val discountPolicy : DiscountPolicy = FixDiscountPolicy()
+//    private val discountPolicy : DiscountPolicy = RateDiscountPolicy()
 
     override fun createOrder(memberId: Long, itemName: String, itemPrice: Int): Order? {
         memberRepo.findById(memberId)?.let {

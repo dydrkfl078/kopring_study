@@ -2,6 +2,7 @@ package prac2.core.order
 
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
+import prac2.core.AppConfig
 import prac2.core.discount.DiscountPolicy
 import prac2.core.discount.FixDiscountPolicy
 import prac2.core.member.Grade
@@ -13,9 +14,8 @@ import prac2.core.service.MemberServiceImpl
 class OrderServiceTest {
 
     companion object {
-        private val memberRepo : MemberRepo = MemoryMemberRepo()
-        private val memberService = MemberServiceImpl()
-        private val orderService = OrderServiceImpl()
+        private val memberService = AppConfig.memberService()
+        private val orderService = AppConfig.orderService()
     }
 
     @Test

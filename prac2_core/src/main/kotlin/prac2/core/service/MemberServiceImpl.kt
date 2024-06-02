@@ -4,9 +4,7 @@ import prac2.core.member.Member
 import prac2.core.repository.MemberRepo
 import prac2.core.repository.MemoryMemberRepo
 
-class MemberServiceImpl(): MemberService {
-
-    private val memberRepo: MemberRepo = MemoryMemberRepo()
+class MemberServiceImpl(private val memberRepo : MemberRepo): MemberService {
 
     override fun join(member: Member) {
         memberRepo.save(member)
