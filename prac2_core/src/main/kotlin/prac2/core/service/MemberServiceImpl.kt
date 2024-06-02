@@ -13,6 +13,6 @@ class MemberServiceImpl(): MemberService {
     }
 
     override fun findMember(memberId: Long): Member? {
-        memberRepo.findById(memberId)?.let { return it } ?:return null
+        memberRepo.findById(memberId)?.let { return it } ?: return null
     }
 }
