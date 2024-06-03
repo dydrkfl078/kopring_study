@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: io.kotest:kotest-framework-api-jvm:5.9.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.kotest" artifactId="kotest-framework-api-jvm" version="5.9.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.kotest/kotest-framework-api-jvm/5.9.0/bfeb77c154a6938201e6d1490586484e405b4819/kotest-framework-api-jvm-5.9.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
