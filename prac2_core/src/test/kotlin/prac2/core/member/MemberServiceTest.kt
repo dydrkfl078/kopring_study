@@ -2,15 +2,15 @@ package prac2.core.member
 
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
+import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import prac2.core.AppConfig
-import prac2.core.repository.MemoryMemberRepo
 import prac2.core.service.MemberService
-import prac2.core.service.MemberServiceImpl
 
-class MemberServiceTets {
+class MemberServiceTest {
 
     companion object {
-        val memberService = AppConfig.memberService()
+        val ac = AnnotationConfigApplicationContext(AppConfig::class.java)
+        val memberService = ac.getBean("memberService") as MemberService
     }
 
     @Test

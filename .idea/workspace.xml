@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.prac2.core.member.MemberServiceTets and 1 more (1)">
+  <component name="RunManager" selected="Gradle.OrderServiceTest.할인정책이반영된주문을만든다">
     <configuration name="OrderServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,7 +107,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'prac2.core.member'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderServiceTest.할인정책이반영된주문을만든다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
@@ -121,7 +120,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;prac2.core.member.*&quot;" />
+            <option value="&quot;prac2.core.order.OrderServiceTest.할인정책이반영된주문을만든다&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderServiceTest.할인정책이반영된주문을만든다" />
+        <item itemvalue="Gradle.OrderServiceTest" />
         <item itemvalue="Gradle.prac2.core.member.MemberServiceTets and 1 more (1)" />
         <item itemvalue="Gradle.prac2.core.member.MemberServiceTets and 1 more" />
-        <item itemvalue="Gradle.OrderServiceTest" />
         <item itemvalue="Gradle.Tests in 'prac2.core.order'" />
-        <item itemvalue="Gradle.Tests in 'prac2.core.member'" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +236,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717349252480</updated>
-      <workItem from="1717349253995" duration="15010000" />
+      <workItem from="1717349253995" duration="18142000" />
     </task>
     <servers />
   </component>

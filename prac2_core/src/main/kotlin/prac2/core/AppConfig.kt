@@ -1,5 +1,7 @@
 package prac2.core
 
+import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Configuration
 import prac2.core.discount.DiscountPolicy
 import prac2.core.discount.FixDiscountPolicy
 import prac2.core.order.OrderService
@@ -9,20 +11,25 @@ import prac2.core.repository.MemoryMemberRepo
 import prac2.core.service.MemberService
 import prac2.core.service.MemberServiceImpl
 
-object AppConfig  {
+@Configuration
+class AppConfig  {
 
-    private fun memberRepo(): MemberRepo {
+    @Bean
+    fun memberRepo(): MemberRepo {
         return MemoryMemberRepo()
     }
 
-    private fun discountPolicy(): DiscountPolicy {
+    @Bean
+    fun discountPolicy(): DiscountPolicy {
         return FixDiscountPolicy()
     }
 
+    @Bean
     fun memberService(): MemberService {
         return MemberServiceImpl( memberRepo() )
     }
 
+    @Bean
     fun orderService(): OrderService {
         return OrderServiceImpl( memberRepo() , discountPolicy())
     }
