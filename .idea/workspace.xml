@@ -46,6 +46,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 2
@@ -60,6 +65,12 @@
     "Gradle.MemberServiceTets.join.executor": "Run",
     "Gradle.OrderServiceTest.executor": "Run",
     "Gradle.OrderServiceTest.할인정책이반영된주문을만든다.executor": "Run",
+    "Gradle.SpringBeanTest.executor": "Run",
+    "Gradle.SpringBeanTest.findAllBean.executor": "Run",
+    "Gradle.SpringBeanTest.findBeanByTypeDuplicate.executor": "Run",
+    "Gradle.SpringBeanTest.findBeanName.executor": "Run",
+    "Gradle.SpringBeanTest.findBeanName_X.executor": "Run",
+    "Gradle.SpringBeanTest.findBeanType.executor": "Run",
     "Gradle.Tests in 'prac2.core'.executor": "Run",
     "Gradle.Tests in 'prac2.core.member'.executor": "Run",
     "Gradle.Tests in 'prac2.core.order'.executor": "Run",
@@ -82,8 +93,8 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.OrderServiceTest.할인정책이반영된주문을만든다">
-    <configuration name="OrderServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SpringBeanTest.findBeanByTypeDuplicate">
+    <configuration name="SpringBeanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
@@ -96,7 +107,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;prac2.core.order.OrderServiceTest&quot;" />
+            <option value="&quot;prac2.core.SpringBeanTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -107,7 +118,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="OrderServiceTest.할인정책이반영된주문을만든다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SpringBeanTest.findBeanByTypeDuplicate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
@@ -120,7 +131,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;prac2.core.order.OrderServiceTest.할인정책이반영된주문을만든다&quot;" />
+            <option value="&quot;prac2.core.SpringBeanTest.findBeanByTypeDuplicate&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -131,7 +142,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'prac2.core.order'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SpringBeanTest.findBeanName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
@@ -144,7 +155,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;prac2.core.order.*&quot;" />
+            <option value="&quot;prac2.core.SpringBeanTest.findBeanName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -155,7 +166,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="prac2.core.member.MemberServiceTets and 1 more (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SpringBeanTest.findBeanName_X" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
@@ -167,8 +178,8 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests &quot;prac2.core.member.MemberServiceTets&quot;" />
-            <option value="--tests &quot;prac2.core.order.OrderServiceTest&quot;" />
+            <option value="--tests" />
+            <option value="&quot;prac2.core.SpringBeanTest.findBeanName_X&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -179,7 +190,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="prac2.core.member.MemberServiceTets and 1 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SpringBeanTest.findBeanType" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
@@ -191,8 +202,8 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests &quot;prac2.core.member.MemberServiceTets&quot;" />
-            <option value="--tests &quot;prac2.core.order.OrderServiceTest&quot;" />
+            <option value="--tests" />
+            <option value="&quot;prac2.core.SpringBeanTest.findBeanType&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.OrderServiceTest.할인정책이반영된주문을만든다" />
-        <item itemvalue="Gradle.OrderServiceTest" />
-        <item itemvalue="Gradle.prac2.core.member.MemberServiceTets and 1 more (1)" />
-        <item itemvalue="Gradle.prac2.core.member.MemberServiceTets and 1 more" />
-        <item itemvalue="Gradle.Tests in 'prac2.core.order'" />
+        <item itemvalue="Gradle.SpringBeanTest.findBeanByTypeDuplicate" />
+        <item itemvalue="Gradle.SpringBeanTest.findBeanName_X" />
+        <item itemvalue="Gradle.SpringBeanTest.findBeanType" />
+        <item itemvalue="Gradle.SpringBeanTest.findBeanName" />
+        <item itemvalue="Gradle.SpringBeanTest" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +247,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717349252480</updated>
-      <workItem from="1717349253995" duration="18142000" />
+      <workItem from="1717349253995" duration="24414000" />
     </task>
     <servers />
   </component>
