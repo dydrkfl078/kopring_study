@@ -65,6 +65,7 @@
     "Gradle.MemberServiceTets.join.executor": "Run",
     "Gradle.OrderServiceTest.executor": "Run",
     "Gradle.OrderServiceTest.할인정책이반영된주문을만든다.executor": "Run",
+    "Gradle.SingletonServiceTest.singletonServiceIsSingleton.executor": "Run",
     "Gradle.SpringBeanTest.executor": "Run",
     "Gradle.SpringBeanTest.findAllBean.executor": "Run",
     "Gradle.SpringBeanTest.findBeanByTypeDuplicate.executor": "Run",
@@ -93,8 +94,8 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.SpringBeanTest.findBeanByTypeDuplicate">
-    <configuration name="SpringBeanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SingletonServiceTest.singletonSpringContainerInstance">
+    <configuration name="SingletonServiceTest.singletonServiceIsSingleton" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
@@ -107,7 +108,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;prac2.core.SpringBeanTest&quot;" />
+            <option value="&quot;prac2.core.singleton.SingletonServiceTest.singletonServiceIsSingleton&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SingletonServiceTest.singletonSpringContainerInstance" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;prac2.core.singleton.SingletonServiceTest.singletonSpringContainerInstance&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -132,30 +157,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;prac2.core.SpringBeanTest.findBeanByTypeDuplicate&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SpringBeanTest.findBeanName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;prac2.core.SpringBeanTest.findBeanName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -223,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SingletonServiceTest.singletonSpringContainerInstance" />
+        <item itemvalue="Gradle.SingletonServiceTest.singletonServiceIsSingleton" />
         <item itemvalue="Gradle.SpringBeanTest.findBeanByTypeDuplicate" />
         <item itemvalue="Gradle.SpringBeanTest.findBeanName_X" />
         <item itemvalue="Gradle.SpringBeanTest.findBeanType" />
-        <item itemvalue="Gradle.SpringBeanTest.findBeanName" />
-        <item itemvalue="Gradle.SpringBeanTest" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +248,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717349252480</updated>
-      <workItem from="1717349253995" duration="24414000" />
+      <workItem from="1717349253995" duration="29484000" />
     </task>
     <servers />
   </component>
