@@ -2,6 +2,7 @@ package prac2.core.autowired
 
 import io.kotest.assertions.throwables.shouldThrow
 import org.junit.jupiter.api.Test
+import org.springframework.beans.factory.NoSuchBeanDefinitionException
 import org.springframework.beans.factory.UnsatisfiedDependencyException
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.AnnotationConfigApplicationContext
@@ -15,8 +16,8 @@ class AutowiredOptionTest {
     fun autowiredOption(){
         val ac = AnnotationConfigApplicationContext(AutowiredOptionTestConfig::class.java)
 
-        shouldThrow<UnsatisfiedDependencyException> {
-//            ac.getBean()
+        shouldThrow<NoSuchBeanDefinitionException> {
+            ac.getBean(Member::class.java)
         }
     }
 }

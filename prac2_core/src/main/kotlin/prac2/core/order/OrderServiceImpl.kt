@@ -4,12 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 import prac2.core.discount.DiscountPolicy
 import prac2.core.discount.FixDiscountPolicy
+import prac2.core.discount.MainDiscountPolicy
 import prac2.core.discount.RateDiscountPolicy
 import prac2.core.repository.MemberRepo
 import prac2.core.repository.MemoryMemberRepo
 
 @Component
-class OrderServiceImpl(private val memberRepo: MemberRepo, private val discountPolicy: DiscountPolicy): OrderService {
+class OrderServiceImpl(private val memberRepo: MemberRepo, @MainDiscountPolicy private val discountPolicy: DiscountPolicy): OrderService {
 
 //    private val memberRepo : MemberRepo = MemoryMemberRepo()
 //    private val discountPolicy : DiscountPolicy = FixDiscountPolicy()

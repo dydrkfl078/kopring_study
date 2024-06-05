@@ -40,8 +40,8 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Kotlin Annotation" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Annotation" />
       </list>
     </option>
   </component>
@@ -115,7 +115,7 @@
       <recent name="prac2.core.filter" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AutowiredOptionTest.autowiredOption">
+  <component name="RunManager" selected="Gradle.Tests in 'prac2.core'">
     <configuration name="AutoAppConfigTest.findBeanWithAutoAppConfig" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -245,10 +245,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'prac2.core'" />
         <item itemvalue="Gradle.AutowiredOptionTest.autowiredOption" />
         <item itemvalue="Gradle.ComponentFilterTest" />
         <item itemvalue="Gradle.ComponentFilterTest.excludeFilter" />
-        <item itemvalue="Gradle.Tests in 'prac2.core'" />
         <item itemvalue="Gradle.AutoAppConfigTest.findBeanWithAutoAppConfig" />
       </list>
     </recent_temporary>
@@ -269,7 +269,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717349252480</updated>
-      <workItem from="1717349253995" duration="46073000" />
+      <workItem from="1717349253995" duration="47886000" />
     </task>
     <servers />
   </component>

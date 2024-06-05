@@ -5,6 +5,7 @@ import prac2.core.member.Grade
 import prac2.core.member.Member
 
 @Component
+@MainDiscountPolicy
 class RateDiscountPolicy : DiscountPolicy{
 
     private val rate = 10
