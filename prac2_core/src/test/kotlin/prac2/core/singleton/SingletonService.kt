@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test
 import org.springframework.context.ApplicationContext
 import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import prac2.core.AppConfig
+import prac2.core.order.OrderService
 import prac2.core.service.MemberService
 
 class SingletonService private constructor() {
@@ -41,5 +42,14 @@ class SingletonServiceTest(){
         val instance2 = ac.getBean("memberService", MemberService::class.java)
 
         instance1.shouldBeSameInstanceAs(instance2)
+    }
+
+    @Test
+    @DisplayName("스프링 컨테이너의 빈으로 등록된 객체 A가 매개변수로 주어지는 객체 B, C의 매개변수 A는 동일한 객체이다. ")
+    fun singletonSpringBeanParam(){
+        val instance1 = ac.getBean("memberService", MemberService::class.java)
+        val instance2 = ac.getBean("orderService", OrderService::class.java)
+
+        instance1.getRepo() shouldBeSameInstanceAs instance2.getRepo()
     }
 }

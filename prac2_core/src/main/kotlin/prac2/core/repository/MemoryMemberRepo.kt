@@ -1,7 +1,9 @@
 package prac2.core.repository
 
+import org.springframework.stereotype.Component
 import prac2.core.member.Member
 
+@Component
 class MemoryMemberRepo(): MemberRepo {
 
     companion object {

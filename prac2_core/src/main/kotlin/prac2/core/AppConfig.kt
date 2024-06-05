@@ -16,6 +16,7 @@ class AppConfig  {
 
     @Bean
     fun memberRepo(): MemberRepo {
+        println("Call Member Repo")
         return MemoryMemberRepo()
     }
 
@@ -26,11 +27,13 @@ class AppConfig  {
 
     @Bean
     fun memberService(): MemberService {
+        println("Call Member Service")
         return MemberServiceImpl( memberRepo() )
     }
 
     @Bean
     fun orderService(): OrderService {
+        println("Call Order Service")
         return OrderServiceImpl( memberRepo() , discountPolicy())
     }
 }
