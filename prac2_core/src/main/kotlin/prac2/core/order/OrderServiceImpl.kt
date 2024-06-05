@@ -9,7 +9,7 @@ import prac2.core.repository.MemberRepo
 import prac2.core.repository.MemoryMemberRepo
 
 @Component
-class OrderServiceImpl(@Autowired private val memberRepo: MemberRepo, @Autowired private val discountPolicy: DiscountPolicy): OrderService {
+class OrderServiceImpl(private val memberRepo: MemberRepo, private val discountPolicy: DiscountPolicy): OrderService {
 
 //    private val memberRepo : MemberRepo = MemoryMemberRepo()
 //    private val discountPolicy : DiscountPolicy = FixDiscountPolicy()
