@@ -1,11 +1,13 @@
 package prac2.core.discount
 
+import org.springframework.context.annotation.Primary
 import org.springframework.stereotype.Component
 import prac2.core.member.Grade
 import prac2.core.member.Member
 
 @Component
 @MainDiscountPolicy
+@Primary
 class RateDiscountPolicy : DiscountPolicy{
 
     private val rate = 10

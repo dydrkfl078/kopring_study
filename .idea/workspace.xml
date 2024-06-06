@@ -40,8 +40,8 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Annotation" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -64,6 +64,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.AllBeanTest.findAllBean.executor": "Run",
     "Gradle.AutoAppConfigTest.findBeanWithAutoAppConfig.executor": "Run",
     "Gradle.AutowiredOptionTest.autowiredOption.executor": "Run",
     "Gradle.ComponentFilterTest.excludeFilter.executor": "Run",
@@ -96,6 +97,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -115,8 +117,8 @@
       <recent name="prac2.core.filter" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'prac2.core'">
-    <configuration name="AutoAppConfigTest.findBeanWithAutoAppConfig" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AllBeanTest.findAllBean">
+    <configuration name="AllBeanTest.findAllBean" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
@@ -129,7 +131,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;prac2.core.AutoAppConfigTest.findBeanWithAutoAppConfig&quot;" />
+            <option value="&quot;prac2.core.autowired.AllBeanTest.findAllBean&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -245,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AllBeanTest.findAllBean" />
         <item itemvalue="Gradle.Tests in 'prac2.core'" />
         <item itemvalue="Gradle.AutowiredOptionTest.autowiredOption" />
         <item itemvalue="Gradle.ComponentFilterTest" />
         <item itemvalue="Gradle.ComponentFilterTest.excludeFilter" />
-        <item itemvalue="Gradle.AutoAppConfigTest.findBeanWithAutoAppConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +271,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717349252480</updated>
-      <workItem from="1717349253995" duration="47886000" />
+      <workItem from="1717349253995" duration="56289000" />
     </task>
     <servers />
   </component>
