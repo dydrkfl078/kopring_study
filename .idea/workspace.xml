@@ -68,6 +68,7 @@
     "Gradle.AutoAppConfigTest.findBeanWithAutoAppConfig.executor": "Run",
     "Gradle.AutowiredOptionTest.autowiredOption.executor": "Run",
     "Gradle.BeanLifecycleTest.beanLifecycleTest.executor": "Run",
+    "Gradle.BeanScopeTest.prototypeBeanScopeTest.executor": "Run",
     "Gradle.ComponentFilterTest.excludeFilter.executor": "Run",
     "Gradle.ComponentFilterTest.executor": "Run",
     "Gradle.MemberServiceTets.join.executor": "Run",
@@ -118,7 +119,7 @@
       <recent name="prac2.core.filter" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BeanLifecycleTest.beanLifecycleTest">
+  <component name="RunManager" selected="Gradle.BeanScopeTest.prototypeBeanScopeTest">
     <configuration name="AllBeanTest.findAllBean" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -191,7 +192,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ComponentFilterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BeanScopeTest.prototypeBeanScopeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
@@ -204,7 +205,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;prac2.core.filter.ComponentFilterTest&quot;" />
+            <option value="&quot;prac2.core.scope.BeanScopeTest.prototypeBeanScopeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -248,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BeanScopeTest.prototypeBeanScopeTest" />
         <item itemvalue="Gradle.BeanLifecycleTest.beanLifecycleTest" />
         <item itemvalue="Gradle.AllBeanTest.findAllBean" />
         <item itemvalue="Gradle.Tests in 'prac2.core'" />
         <item itemvalue="Gradle.AutowiredOptionTest.autowiredOption" />
-        <item itemvalue="Gradle.ComponentFilterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +273,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717349252480</updated>
-      <workItem from="1717349253995" duration="60168000" />
+      <workItem from="1717349253995" duration="62615000" />
     </task>
     <servers />
   </component>
