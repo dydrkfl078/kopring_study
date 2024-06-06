@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/core.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/core.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +72,7 @@
     "Gradle.AutowiredOptionTest.autowiredOption.executor": "Run",
     "Gradle.BeanLifecycleTest.beanLifecycleTest.executor": "Run",
     "Gradle.BeanScopeTest.prototypeBeanScopeTest.executor": "Run",
+    "Gradle.Build prac2_core.executor": "Run",
     "Gradle.ComponentFilterTest.excludeFilter.executor": "Run",
     "Gradle.ComponentFilterTest.executor": "Run",
     "Gradle.MemberServiceTets.join.executor": "Run",
@@ -89,6 +93,7 @@
     "Gradle.prac2.core.member.MemberServiceTets and 1 more (1).executor": "Run",
     "Gradle.prac2.core.member.MemberServiceTets and 1 more.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CoreApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
@@ -99,6 +104,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
@@ -112,6 +120,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="prac2.core.web" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="prac2.core" />
     </key>
@@ -119,7 +130,7 @@
       <recent name="prac2.core.filter" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BeanScopeTest.prototypeBeanScopeTest">
+  <component name="RunManager" selected="Spring Boot.CoreApplication">
     <configuration name="AllBeanTest.findAllBean" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -273,7 +284,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717349252480</updated>
-      <workItem from="1717349253995" duration="62615000" />
+      <workItem from="1717349253995" duration="64670000" />
     </task>
     <servers />
   </component>
