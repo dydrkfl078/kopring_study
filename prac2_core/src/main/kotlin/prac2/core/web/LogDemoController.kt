@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.ResponseBody
 import prac2.core.common.MyLogger
 
 @Controller
-class LogDemoController(private val myLoggerProvider: ObjectProvider<MyLogger>, private val logDemoService: LogDemoService) {
+class LogDemoController(private val myLogger: MyLogger, private val logDemoService: LogDemoService) {
 
     @RequestMapping("log")
     @ResponseBody
     fun log(request: HttpServletRequest): String {
-        val myLogger = myLoggerProvider.getObject()
         myLogger.setRequestUrl(request.requestURL.toString())
 
         myLogger.log("Controller OK")

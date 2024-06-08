@@ -2,13 +2,13 @@ package prac2.core.common
 
 import jakarta.annotation.PostConstruct
 import jakarta.annotation.PreDestroy
-import org.slf4j.LoggerFactory
 import org.springframework.context.annotation.Scope
+import org.springframework.context.annotation.ScopedProxyMode
 import org.springframework.stereotype.Component
 import java.util.UUID
 
 @Component
-@Scope("request")
+@Scope(value = "request", proxyMode = ScopedProxyMode.TARGET_CLASS)
 class MyLogger {
 
     private lateinit var uuid: UUID
