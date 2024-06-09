@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prac3_servlet/src/main/kotlin/com/example/prac3_servlet/basic/request/RequestParamServlet.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac3_servlet/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
         <option value="Kotlin Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Kotlin Annotation" />
+        <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -303,7 +305,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717349252480</updated>
       <workItem from="1717349253995" duration="68138000" />
-      <workItem from="1717875950137" duration="7298000" />
+      <workItem from="1717875950137" duration="11591000" />
     </task>
     <servers />
   </component>
