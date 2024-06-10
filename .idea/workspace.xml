@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prac3_servlet/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prac3_servlet/src/main/webapp/jsp/members/new-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac3_servlet/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac3_servlet/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac3_servlet/src/main/resources/static/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/src/main/webapp/basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac3_servlet/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac3_servlet/src/main/kotlin/com/example/prac3_servlet/domain/member/Member.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/src/main/kotlin/com/example/prac3_servlet/domain/member/Member.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +327,7 @@
       <workItem from="1717875950137" duration="25861000" />
       <workItem from="1718031164875" duration="4000" />
       <workItem from="1718031286646" duration="23000" />
-      <workItem from="1718031891147" duration="9011000" />
+      <workItem from="1718031891147" duration="13759000" />
     </task>
     <servers />
   </component>

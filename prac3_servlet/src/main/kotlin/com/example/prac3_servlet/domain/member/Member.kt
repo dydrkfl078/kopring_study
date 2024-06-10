@@ -4,6 +4,8 @@ data class Member(private val name: String, private val age: Int){
 
     var id : Long = -1L
 
+    fun getIdNum() : Long = id
+
     fun getName(): String{
         return name
     }
