@@ -28,6 +28,14 @@ dependencies {
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	implementation ("com.fasterxml.jackson.module:jackson-module-kotlin")
+	testImplementation("io.kotest:kotest-runner-junit5:5.9.0")
+	testImplementation("io.kotest:kotest-assertions-core:5.9.0")
+	implementation("io.kotest.extensions:kotest-extensions-spring:1.1.3")
+	implementation ("org.apache.tomcat.embed:tomcat-embed-jasper")
+	implementation ("jakarta.servlet:jakarta.servlet-api") //스프링부트 3.0 이상
+	implementation ("jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api") //스프링부트 3.0 이상
+	implementation ("org.glassfish.web:jakarta.servlet.jsp.jstl") //스프링부트 3.0 이상
+
 }
 
 kotlin {

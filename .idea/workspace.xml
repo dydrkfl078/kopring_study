@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prac3_servlet/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prac3_servlet/src/main/webapp/jsp/members/new-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prac3_servlet/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac3_servlet/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac3_servlet/src/main/resources/static/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/src/main/webapp/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac3_servlet/src/main/resources/static/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +36,9 @@
         <task path="$PROJECT_DIR$/prac2_core">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/prac3_servlet">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -43,11 +51,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Kotlin Annotation" />
         <option value="Kotlin Data Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -65,7 +75,6 @@
 }</component>
   <component name="ProjectId" id="2hKicg9dRduWMHHReCXDAKHveiE" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -79,6 +88,9 @@
     "Gradle.Build prac3_servlet.executor": "Run",
     "Gradle.ComponentFilterTest.excludeFilter.executor": "Run",
     "Gradle.ComponentFilterTest.executor": "Run",
+    "Gradle.MemberRepoTest.executor": "Run",
+    "Gradle.MemberRepoTest.findAll.executor": "Run",
+    "Gradle.MemberRepoTest.save.executor": "Run",
     "Gradle.MemberServiceTets.join.executor": "Run",
     "Gradle.OrderServiceTest.executor": "Run",
     "Gradle.OrderServiceTest.할인정책이반영된주문을만든다.executor": "Run",
@@ -107,13 +119,13 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac3_servlet/build.gradle.kts",
+    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac3_servlet",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
@@ -131,14 +143,17 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\resources\static" />
       <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\webapp" />
+      <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\resources\static" />
+      <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\resources\templates\jsp\members" />
+      <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\resources\templates\jsp" />
       <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\resources\templates" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="prac2.core.web" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.prac3_servlet.domain.member" />
       <recent name="prac2.core" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
@@ -155,54 +170,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Prac3ServletApplication">
-    <configuration name="AllBeanTest.findAllBean" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;prac2.core.autowired.AllBeanTest.findAllBean&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="BeanLifecycleTest.beanLifecycleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;prac2.core.lifecycle.BeanLifecycleTest.beanLifecycleTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="BeanScopeTest.prototypeBeanScopeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -227,10 +194,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'prac2.core'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MemberRepoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/prac3_servlet" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -240,7 +207,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;prac2.core.*&quot;" />
+            <option value="&quot;com.example.prac3_servlet.domain.member.MemberRepoTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberRepoTest.findAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/prac3_servlet" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.prac3_servlet.domain.member.MemberRepoTest.findAll&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberRepoTest.save" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/prac3_servlet" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.prac3_servlet.domain.member.MemberRepoTest.save&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -268,6 +283,7 @@
     <configuration name="Prac3ServletApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="prac3_servlet.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.prac3_servlet.Prac3ServletApplication" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/prac3_servlet" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.prac3_servlet.*" />
@@ -278,13 +294,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.BeanScopeTest.prototypeBeanScopeTest" />
+      <item itemvalue="Gradle.MemberRepoTest" />
+      <item itemvalue="Gradle.MemberRepoTest.findAll" />
+      <item itemvalue="Gradle.MemberRepoTest.save" />
+      <item itemvalue="Spring Boot.CoreApplication" />
+      <item itemvalue="Spring Boot.KopringPrac1Application" />
+      <item itemvalue="Spring Boot.Prac3ServletApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Prac3ServletApplication" />
+        <item itemvalue="Gradle.MemberRepoTest" />
+        <item itemvalue="Gradle.MemberRepoTest.save" />
+        <item itemvalue="Gradle.MemberRepoTest.findAll" />
         <item itemvalue="Gradle.BeanScopeTest.prototypeBeanScopeTest" />
-        <item itemvalue="Gradle.BeanLifecycleTest.beanLifecycleTest" />
-        <item itemvalue="Gradle.AllBeanTest.findAllBean" />
-        <item itemvalue="Gradle.Tests in 'prac2.core'" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +330,10 @@
       <option name="presentableId" value="Default" />
       <updated>1717349252480</updated>
       <workItem from="1717349253995" duration="68138000" />
-      <workItem from="1717875950137" duration="11591000" />
+      <workItem from="1717875950137" duration="25861000" />
+      <workItem from="1718031164875" duration="4000" />
+      <workItem from="1718031286646" duration="23000" />
+      <workItem from="1718031891147" duration="9011000" />
     </task>
     <servers />
   </component>
