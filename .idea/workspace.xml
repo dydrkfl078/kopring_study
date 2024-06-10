@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac3_servlet/src/main/kotlin/com/example/prac3_servlet/domain/member/Member.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/src/main/kotlin/com/example/prac3_servlet/domain/member/Member.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac3_servlet/src/main/webapp/WEB-INF/views/save-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/prac3_servlet/src/main/webapp/WEB-INF/views/save-result.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +51,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Kotlin File" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Jsp File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -107,6 +108,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.CoreApplication.executor": "Run",
     "Spring Boot.Prac3ServletApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -327,7 +329,7 @@
       <workItem from="1717875950137" duration="25861000" />
       <workItem from="1718031164875" duration="4000" />
       <workItem from="1718031286646" duration="23000" />
-      <workItem from="1718031891147" duration="13759000" />
+      <workItem from="1718031891147" duration="17218000" />
     </task>
     <servers />
   </component>
