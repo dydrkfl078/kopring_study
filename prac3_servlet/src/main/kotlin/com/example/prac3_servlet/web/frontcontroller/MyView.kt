@@ -13,4 +13,11 @@ class MyView (private val viewPath: String) {
         val dispatcher = request.getRequestDispatcher(viewPath)
         dispatcher.forward(request, response)
     }
+
+    @Throws(ServletException::class, IOException::class)
+    fun render(model : HashMap<String,Any>, request : HttpServletRequest, response: HttpServletResponse) {
+        model.forEach { (key, value) -> request.setAttribute(key, value) }
+        val dispatcher = request.getRequestDispatcher(viewPath)
+        dispatcher.forward(request, response)
+    }
 }
