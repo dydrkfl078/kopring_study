@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac4_springmvc/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/prac4_springmvc/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,8 @@
         <option value="Kotlin File" />
         <option value="Jsp File" />
         <option value="Kotlin Interface" />
+        <option value="HTML File" />
+        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -82,6 +83,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.AllBeanTest.findAllBean.executor": "Run",
     "Gradle.AutoAppConfigTest.findBeanWithAutoAppConfig.executor": "Run",
     "Gradle.AutowiredOptionTest.autowiredOption.executor": "Run",
@@ -120,6 +122,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.CoreApplication.executor": "Run",
     "Spring Boot.Prac3ServletApplication.executor": "Run",
+    "Spring Boot.Prac4SpringmvcApplication.executor": "Run",
     "Spring Boot.SpringmvcApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -181,31 +184,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringmvcApplication">
-    <configuration name="BeanScopeTest.prototypeBeanScopeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/prac2_core" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;prac2.core.scope.BeanScopeTest.prototypeBeanScopeTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.Prac4SpringmvcApplication">
     <configuration name="MemberRepoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -306,6 +285,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Prac4SpringmvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springmvc.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="prac.springmvc.Prac4SpringmvcApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="prac.springmvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringmvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springmvc.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="prac.springmvc.SpringmvcApplication" />
@@ -314,22 +306,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.BeanScopeTest.prototypeBeanScopeTest" />
       <item itemvalue="Gradle.MemberRepoTest" />
       <item itemvalue="Gradle.MemberRepoTest.findAll" />
       <item itemvalue="Gradle.MemberRepoTest.save" />
       <item itemvalue="Spring Boot.SpringmvcApplication" />
       <item itemvalue="Spring Boot.CoreApplication" />
       <item itemvalue="Spring Boot.KopringPrac1Application" />
+      <item itemvalue="Spring Boot.Prac4SpringmvcApplication" />
       <item itemvalue="Spring Boot.Prac3ServletApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Prac4SpringmvcApplication" />
         <item itemvalue="Spring Boot.Prac3ServletApplication" />
         <item itemvalue="Gradle.MemberRepoTest" />
         <item itemvalue="Gradle.MemberRepoTest.save" />
         <item itemvalue="Gradle.MemberRepoTest.findAll" />
-        <item itemvalue="Gradle.BeanScopeTest.prototypeBeanScopeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +345,7 @@
       <workItem from="1717875950137" duration="25861000" />
       <workItem from="1718031164875" duration="4000" />
       <workItem from="1718031286646" duration="23000" />
-      <workItem from="1718031891147" duration="60414000" />
+      <workItem from="1718031891147" duration="69147000" />
     </task>
     <servers />
   </component>

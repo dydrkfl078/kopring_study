@@ -30,6 +30,7 @@ dependencies {
 	testImplementation("io.kotest:kotest-runner-junit5:5.9.0")
 	testImplementation("io.kotest:kotest-assertions-core:5.9.0")
 	implementation("io.kotest.extensions:kotest-extensions-spring:1.1.3")
+	implementation("io.github.oshai:kotlin-logging-jvm:5.1.1")
 }
 
 kotlin {
