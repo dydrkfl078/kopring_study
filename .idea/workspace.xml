@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/prac4_springmvc/src/main/kotlin/prac/springmvc/basic/request/RequestParamController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prac4_springmvc/src/main/kotlin/prac/springmvc/basic/requestmapping/MappingClassController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prac4_springmvc/src/main/resources/static/basic/hello-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac4_springmvc/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/prac4_springmvc/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +61,10 @@
         <option value="Kotlin File" />
         <option value="Jsp File" />
         <option value="Kotlin Interface" />
-        <option value="HTML File" />
         <option value="Kotlin Object" />
+        <option value="package-info" />
         <option value="Kotlin Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -138,7 +141,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -345,7 +348,7 @@
       <workItem from="1717875950137" duration="25861000" />
       <workItem from="1718031164875" duration="4000" />
       <workItem from="1718031286646" duration="23000" />
-      <workItem from="1718031891147" duration="69147000" />
+      <workItem from="1718031891147" duration="75157000" />
     </task>
     <servers />
   </component>
