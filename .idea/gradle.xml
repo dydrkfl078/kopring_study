@@ -34,6 +34,15 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/prac4_springmvc" />
+        <option name="gradleJvm" value="graalvm-jdk-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/prac4_springmvc" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>

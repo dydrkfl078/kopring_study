@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,9 @@
     <projectState path="$PROJECT_DIR$/prac3_servlet">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/prac4_springmvc">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -34,7 +39,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springmvc" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -79,6 +89,7 @@
     "Gradle.BeanScopeTest.prototypeBeanScopeTest.executor": "Run",
     "Gradle.Build prac2_core.executor": "Run",
     "Gradle.Build prac3_servlet.executor": "Run",
+    "Gradle.Build prac4_springmvc.executor": "Run",
     "Gradle.ComponentFilterTest.excludeFilter.executor": "Run",
     "Gradle.ComponentFilterTest.executor": "Run",
     "Gradle.MemberRepoTest.executor": "Run",
@@ -109,11 +120,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.CoreApplication.executor": "Run",
     "Spring Boot.Prac3ServletApplication.executor": "Run",
+    "Spring Boot.SpringmvcApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac3_servlet",
+    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac4_springmvc/build.gradle.kts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,11 +149,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\webapp\resources\images" />
       <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\webapp" />
       <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\resources\static" />
       <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\resources\templates\jsp\members" />
       <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\resources\templates\jsp" />
-      <recent name="C:\Users\june\Desktop\kopring_workspace\prac3_servlet\src\main\resources\templates" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="prac2.core.web" />
@@ -169,7 +181,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Prac3ServletApplication">
+  <component name="RunManager" selected="Spring Boot.SpringmvcApplication">
     <configuration name="BeanScopeTest.prototypeBeanScopeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -294,11 +306,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringmvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springmvc.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="prac.springmvc.SpringmvcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Gradle.BeanScopeTest.prototypeBeanScopeTest" />
       <item itemvalue="Gradle.MemberRepoTest" />
       <item itemvalue="Gradle.MemberRepoTest.findAll" />
       <item itemvalue="Gradle.MemberRepoTest.save" />
+      <item itemvalue="Spring Boot.SpringmvcApplication" />
       <item itemvalue="Spring Boot.CoreApplication" />
       <item itemvalue="Spring Boot.KopringPrac1Application" />
       <item itemvalue="Spring Boot.Prac3ServletApplication" />
@@ -333,7 +353,7 @@
       <workItem from="1717875950137" duration="25861000" />
       <workItem from="1718031164875" duration="4000" />
       <workItem from="1718031286646" duration="23000" />
-      <workItem from="1718031891147" duration="56961000" />
+      <workItem from="1718031891147" duration="60414000" />
     </task>
     <servers />
   </component>

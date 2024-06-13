@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/prac1_intro" />
     <file type="web" url="file://$PROJECT_DIR$/prac2_core" />
     <file type="web" url="file://$PROJECT_DIR$/prac3_servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/prac4_springmvc" />
   </component>
   <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />
