@@ -5,9 +5,11 @@ import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
 import org.springframework.stereotype.Controller
 import org.springframework.util.MultiValueMap
+import org.springframework.web.bind.annotation.ModelAttribute
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseBody
+import prac.springmvc.basic.User
 
 private val logger = KotlinLogging.logger {  }
 
@@ -73,5 +75,27 @@ class RequestParamController {
     fun requestParamMap(@RequestParam paramMap : MultiValueMap<String,String>): String{
         logger.info { "usernames = ${paramMap["username"]} age = ${paramMap["age"]}" }
         return "request param map OK"
+    }
+
+    // @ModelAttribute 작동원리
+    // 1. @ModelAttribute 로 지정된 객체를 생성한다 예제의 경우 User 객체 생성.
+    // 2. 요청 파라미터의 이름과 일치하는 User 객체의 프로퍼티를 찾는다.
+    // 3. 일치하는 User 객체의 프로퍼티의 setter 를 호출해서 파라미터의 값을 바인딩 한다.
+    // 4. User 객체의 프로퍼티 타입과 요청 파라미터가 일치하지 않으면 BindException 발생.
+    @ResponseBody
+    @RequestMapping("/model-attribute-v1")
+    fun modelAttributeV1(@ModelAttribute user: User): String{
+        logger.info { "user = $user" }
+        return "Model Attribute v1 OK"
+    }
+
+    // @ModelAttribute 생략가능
+    // Model 객체에 프로퍼티가 단순 타입이면 생략이 가능하다.
+    // argument resolver 로 지정해둔 타입은 생략 불가능.
+    @ResponseBody
+    @RequestMapping("/model-attribute-v2")
+    fun modelAttributeV2(user: User): String{
+        logger.info { "user = $user" }
+        return "Model Attribute v2 OK"
     }
 }
