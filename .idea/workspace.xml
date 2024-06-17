@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":tada:Clone - 상품 등록 Project 시작">
+    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":books:상품 등록 프로젝트&#10;- [메모리] 상품 CRU 추가 ( Delete는 X )&#10;- Thymeleaf 를 통한 동적 ModelView 학습&#10;- PRG ( Post - Redirection - Get ) 학습">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +27,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/prac5_registration">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/prac6_thymeleaf">
       <ProjectState />
     </projectState>
   </component>
@@ -143,7 +145,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac5_registration/src/main/resources/static/css",
+    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac6_thymeleaf/build.gradle.kts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -301,20 +303,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="core.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="prac2.core.CoreApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KopringPrac1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="kopring_prac1.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="practice_thymeleaf.kopring_prac1.KopringPrac1Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegistrationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="registration.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="kopringprac.registration.RegistrationApplication" />
@@ -328,9 +316,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringmvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="springmvc.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="prac.springmvc.SpringmvcApplication" />
+    <configuration name="ThymeleafApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="thymeleaf.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kopring.thymeleaf.ThymeleafApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -340,9 +328,7 @@
       <item itemvalue="Gradle.ItemRepoTest.findAll" />
       <item itemvalue="Gradle.ItemRepoTest.findById" />
       <item itemvalue="Gradle.ItemRepoTest.update" />
-      <item itemvalue="Spring Boot.SpringmvcApplication" />
-      <item itemvalue="Spring Boot.CoreApplication" />
-      <item itemvalue="Spring Boot.KopringPrac1Application" />
+      <item itemvalue="Spring Boot.ThymeleafApplication" />
       <item itemvalue="Spring Boot.RegistrationApplication" />
     </list>
     <recent_temporary>
@@ -377,7 +363,7 @@
       <workItem from="1718031286646" duration="23000" />
       <workItem from="1718031891147" duration="76210000" />
       <workItem from="1718369754934" duration="12979000" />
-      <workItem from="1718390483465" duration="23114000" />
+      <workItem from="1718390483465" duration="24213000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
@@ -411,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718390688995</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=":books:상품 등록 프로젝트&#10;- [메모리] 상품 CRU 추가 ( Delete는 X )&#10;- Thymeleaf 를 통한 동적 ModelView 학습&#10;- PRG ( Post - Redirection - Get ) 학습">
+      <option name="closed" value="true" />
+      <created>1718654255238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718654255238</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +427,8 @@
     <MESSAGE value=":books:RequestBody - Json 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;3. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.&#10;4. @RequestBody 로 역직렬화된 객체를 다시 ResponseBody 에 넣어 응답해주기." />
     <MESSAGE value=":books:Thymeleaf - 학습&#10;1. Controller 의 매핑된 요청에서 ModelAndView 를 반환하여 매핑&#10;2. 매핑된 요청에서 String 으로 template 경로를 반환하여 매핑" />
     <MESSAGE value=":tada:Clone - 상품 등록 Project 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value=":tada:Clone - 상품 등록 Project 시작" />
+    <MESSAGE value=":books:상품 등록 프로젝트&#10;- [메모리] 상품 CRU 추가 ( Delete는 X )&#10;- Thymeleaf 를 통한 동적 ModelView 학습&#10;- PRG ( Post - Redirection - Get ) 학습" />
+    <option name="LAST_COMMIT_MESSAGE" value=":books:상품 등록 프로젝트&#10;- [메모리] 상품 CRU 추가 ( Delete는 X )&#10;- Thymeleaf 를 통한 동적 ModelView 학습&#10;- PRG ( Post - Redirection - Get ) 학습" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

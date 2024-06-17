@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/prac3_servlet" />
     <file type="web" url="file://$PROJECT_DIR$/prac4_springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/prac5_registration" />
+    <file type="web" url="file://$PROJECT_DIR$/prac6_thymeleaf" />
   </component>
   <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />
