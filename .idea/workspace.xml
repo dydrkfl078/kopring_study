@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":tada:Clone - 상품 등록 Project 시작">
-      <change afterPath="$PROJECT_DIR$/prac5_registration/src/test/kotlin/kopringprac/registration/domain/item/ItemRepoTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +40,9 @@
         <task path="$PROJECT_DIR$/prac3_servlet">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/prac5_registration">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -62,10 +66,10 @@
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
         <option value="package-info" />
-        <option value="HTML File" />
         <option value="Kotlin Data Class" />
-        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -96,6 +100,7 @@
     "Gradle.Build prac2_core.executor": "Run",
     "Gradle.Build prac3_servlet.executor": "Run",
     "Gradle.Build prac4_springmvc.executor": "Run",
+    "Gradle.Build prac5_registration.executor": "Run",
     "Gradle.ComponentFilterTest.excludeFilter.executor": "Run",
     "Gradle.ComponentFilterTest.executor": "Run",
     "Gradle.ItemRepoTest.executor": "Run",
@@ -132,12 +137,13 @@
     "Spring Boot.CoreApplication.executor": "Run",
     "Spring Boot.Prac3ServletApplication.executor": "Run",
     "Spring Boot.Prac4SpringmvcApplication.executor": "Run",
+    "Spring Boot.RegistrationApplication.executor": "Run",
     "Spring Boot.SpringmvcApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac5_registration/build.gradle.kts",
+    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac5_registration/src/main/resources/static/css",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -148,7 +154,7 @@
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editing.templates",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -158,6 +164,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\june\Desktop\kopring_workspace\prac5_registration\src\main\resources\static\css" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -195,7 +204,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ItemRepoTest">
+  <component name="RunManager" selected="Spring Boot.RegistrationApplication">
     <configuration name="ItemRepoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -268,30 +277,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ItemRepoTest.save" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/prac5_registration" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;kopringprac.registration.domain.item.ItemRepoTest.save&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="ItemRepoTest.update" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -330,6 +315,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistrationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="registration.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kopringprac.registration.RegistrationApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kopringprac.registration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringmvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springmvc.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="prac.springmvc.SpringmvcApplication" />
@@ -341,19 +339,19 @@
       <item itemvalue="Gradle.ItemRepoTest" />
       <item itemvalue="Gradle.ItemRepoTest.findAll" />
       <item itemvalue="Gradle.ItemRepoTest.findById" />
-      <item itemvalue="Gradle.ItemRepoTest.save" />
       <item itemvalue="Gradle.ItemRepoTest.update" />
       <item itemvalue="Spring Boot.SpringmvcApplication" />
       <item itemvalue="Spring Boot.CoreApplication" />
       <item itemvalue="Spring Boot.KopringPrac1Application" />
+      <item itemvalue="Spring Boot.RegistrationApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.RegistrationApplication" />
         <item itemvalue="Gradle.ItemRepoTest" />
         <item itemvalue="Gradle.ItemRepoTest.findAll" />
         <item itemvalue="Gradle.ItemRepoTest.update" />
         <item itemvalue="Gradle.ItemRepoTest.findById" />
-        <item itemvalue="Gradle.ItemRepoTest.save" />
       </list>
     </recent_temporary>
   </component>
@@ -379,7 +377,7 @@
       <workItem from="1718031286646" duration="23000" />
       <workItem from="1718031891147" duration="76210000" />
       <workItem from="1718369754934" duration="12979000" />
-      <workItem from="1718390483465" duration="6091000" />
+      <workItem from="1718390483465" duration="23114000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />

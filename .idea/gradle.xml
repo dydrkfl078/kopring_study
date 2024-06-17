@@ -44,6 +44,8 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac5_registration" />
         <option name="gradleJvm" value="graalvm-jdk-21" />
         <option name="modules">
