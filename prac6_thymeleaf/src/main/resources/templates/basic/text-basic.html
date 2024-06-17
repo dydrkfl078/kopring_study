@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Basic - text</h2>
+<ul>
+    <li> 열린 태그 내부 th:text="str" = <span th:text="${data}"></span></li>
+    <li th:inline="none"> 태그 사이 [[str]] = <span>[[${data}]]</span></li>
+</ul>
+<h2>
+    utext / text
+</h2>
+<ul>
+    <li>th:text = <span th:text="${data2}"></span></li>
+    <li>th:utext = <span th:utext="${data2}"></span></li>
+    <li><span th:inline="none"> text - [[str]] =  </span>[[${data2}]]</li>
+    <li><span th:inline="none"> utext - [(str)] = </span>[(${data2})]</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>리스트 반복문</h2>
+<tr th:each="el : ${list}">
+    <td th:text="${el}">
+    </td>
+</tr>
+
+<h2>지역 변수 - th:with </h2>
+<div th:with="first=${list.last}">
+    <p>마지막 숫자는 = <span th:text="${first}"></span></p>
+</div>
+</body>
+</html>

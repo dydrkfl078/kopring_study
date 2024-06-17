@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="kopring_workspace.thymeleaf" target="17" />
+      <module name="kopring_workspace.thymeleaf.main" target="17" />
+      <module name="kopring_workspace.thymeleaf.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

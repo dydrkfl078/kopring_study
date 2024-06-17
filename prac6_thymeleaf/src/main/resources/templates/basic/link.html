@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body th:with="query = ${'kotlin'}">
+
+<h2>링크 URL 만들기</h2>
+<ul>
+    <li><a th:href="@{https://www.google.com/search(q=${query})}">구글에 검색하기</a></li>
+    <li><a th:href="@{'https://www.google.com/search?q=site:velog.io+'+${query}}">밸로그 검색결과만 보기</a></li>
+</ul>
+
+</body>
+</html>

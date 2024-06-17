@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":books:상품 등록 프로젝트&#10;- [메모리] 상품 CRU 추가 ( Delete는 X )&#10;- Thymeleaf 를 통한 동적 ModelView 학습&#10;- PRG ( Post - Redirection - Get ) 학습">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +31,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/prac6_thymeleaf">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/thymeleaf">
       <ProjectState />
     </projectState>
   </component>
@@ -74,6 +78,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,11 +148,12 @@
     "Spring Boot.Prac4SpringmvcApplication.executor": "Run",
     "Spring Boot.RegistrationApplication.executor": "Run",
     "Spring Boot.SpringmvcApplication.executor": "Run",
+    "Spring Boot.ThymeleafApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac6_thymeleaf/build.gradle.kts",
+    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/thymeleaf/build.gradle.kts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -206,7 +214,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RegistrationApplication">
+  <component name="RunManager" selected="Spring Boot.ThymeleafApplication">
     <configuration name="ItemRepoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -363,7 +371,7 @@
       <workItem from="1718031286646" duration="23000" />
       <workItem from="1718031891147" duration="76210000" />
       <workItem from="1718369754934" duration="12979000" />
-      <workItem from="1718390483465" duration="24213000" />
+      <workItem from="1718390483465" duration="32274000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
