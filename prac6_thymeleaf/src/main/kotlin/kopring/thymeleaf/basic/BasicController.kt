@@ -36,6 +36,13 @@ class BasicController {
     fun link(): String{
         return "/basic/link"
     }
+
+    @GetMapping("operation")
+    fun operation(model : Model):String{
+        model.addAttribute("data","Spring")
+        model.addAttribute("noData",null)
+        return "basic/operation"
+    }
 }
 
 @Component
