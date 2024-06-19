@@ -31,6 +31,8 @@ class ItemRepo {
             price = updateItem.price
             quantity = updateItem.quantity
             store[id] = changeItem
+            regions = updateItem.regions
+            open = updateItem.open
         }
     }
 

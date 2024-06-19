@@ -18,8 +18,18 @@ import kotlin.reflect.jvm.internal.impl.util.MemberKindCheck.Member
 class BasicItemController(private val itemRepo: ItemRepo) {
 
     init {
-        itemRepo.save(Item("testItemA", 50000, 30))
-        itemRepo.save(Item("testItemB", 20000, 8))
+        itemRepo.save(Item("testItemA", 50000, 30, false))
+        itemRepo.save(Item("testItemB", 20000, 8, true))
+    }
+
+    @ModelAttribute("regions")
+    fun regions(): LinkedHashMap<String, String> {
+        val regions = LinkedHashMap<String, String>()
+        regions.put("SEOUL","서울")
+        regions.put("ILSAN","일산")
+        regions.put("GURI","구리")
+
+        return regions
     }
 
     @GetMapping
@@ -36,23 +46,22 @@ class BasicItemController(private val itemRepo: ItemRepo) {
     }
 
     @GetMapping("add")
-    fun addForm(): String {
+    fun addForm(model: Model): String {
+        model.addAttribute("item", Item())
         return "basic/addForm"
     }
 
 //    @PostMapping("add")
-    fun save(
-        @RequestParam itemName: String,
-        @RequestParam price: Int,
-        @RequestParam quantity: Int,
-        model: Model
-    ): String {
-        val item = Item(itemName,price,quantity)
-        itemRepo.save(item)
-
-        model.addAttribute("item", item)
-        return "basic/item"
-    }
+//    fun save(
+//        @ModelAttribute
+//        model: Model
+//    ): String {
+//        val item = Item(itemName,price,quantity)
+//        itemRepo.save(item)
+//
+//        model.addAttribute("item", item)
+//        return "basic/item"
+//    }
 
     // @ModelAttribute 를 명시적으로 작성하여 자동으로 Item 객체를 만들어 준다.
     // @ModelAttribute("item") 으로 명시적으로 Model.setAttribute 해줄 수 있으나, 생략할 시 자동으로 클래스 이름으로 생성.
@@ -63,8 +72,6 @@ class BasicItemController(private val itemRepo: ItemRepo) {
         itemRepo.save(item)
         rda.addAttribute("saveItem",item.id)
         rda.addAttribute("state", true)
-
-//        model.addAttribute("item", item)
 
         return "redirect:/basic/items/{saveItem}"
     }
