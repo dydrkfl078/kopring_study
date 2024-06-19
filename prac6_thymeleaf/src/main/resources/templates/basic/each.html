@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>반복문 - Stat/h1>
+<tr th:each="item : ${data}">
+    <br>
+    <td th:text="${item}"></td>
+    <br>
+    <td th:text="${itemStat.even}"></td>
+    <br>
+    <td th:text="${itemStat.current}"></td>
+</tr>
+</body>
+</html>

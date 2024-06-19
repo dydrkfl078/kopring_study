@@ -43,6 +43,31 @@ class BasicController {
         model.addAttribute("noData",null)
         return "basic/operation"
     }
+
+    @GetMapping("attribute")
+    fun attribute():String{
+        return "basic/attribute"
+    }
+
+    @GetMapping("each")
+    fun each(model : Model): String {
+        val testList = listOf("cavempt","Gallery Dept","kith","nooah","Miyake")
+        model.addAttribute("data",testList)
+        return "basic/each"
+    }
+
+    @GetMapping("comments")
+    fun comment(model : Model):String {
+        model.addAttribute("data","Comment Test!")
+        return "basic/comments"
+    }
+
+    @GetMapping("block")
+    fun block(model : Model): String {
+        val testList = listOf("cavempt","Gallery Dept","kith","nooah","Miyake")
+        model.addAttribute("data",testList)
+        return "basic/block"
+    }
 }
 
 @Component
