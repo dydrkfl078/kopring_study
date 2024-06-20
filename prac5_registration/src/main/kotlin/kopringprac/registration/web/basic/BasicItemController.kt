@@ -7,12 +7,16 @@ import kopringprac.registration.domain.item.ItemRepo
 import kopringprac.registration.domain.item.ItemType
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
+import org.springframework.validation.BindingResult
+import org.springframework.validation.FieldError
+import org.springframework.validation.ObjectError
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.ModelAttribute
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.servlet.mvc.support.RedirectAttributes
+import java.lang.reflect.Field
 
 private val logger = KotlinLogging.logger {  }
 
@@ -70,42 +74,43 @@ class BasicItemController(private val itemRepo: ItemRepo) {
         return "basic/addForm"
     }
 
-//    @PostMapping("add")
-//    fun save(
-//        @ModelAttribute
-//        model: Model
-//    ): String {
-//        val item = Item(itemName,price,quantity)
-//        itemRepo.save(item)
-//
-//        model.addAttribute("item", item)
-//        return "basic/item"
-//    }
-
     // @ModelAttribute 를 명시적으로 작성하여 자동으로 Item 객체를 만들어 준다.
     // @ModelAttribute("item") 으로 명시적으로 Model.setAttribute 해줄 수 있으나, 생략할 시 자동으로 클래스 이름으로 생성.
     // @ModelAttribute 자체도 생략이 가능하지만... 왠만하면 명시적으로 적어주는 것이 직관적이고 좋을 것 같다.
     @PostMapping("/add")
-    fun saveV2(@ModelAttribute item : Item, rda : RedirectAttributes, model : Model): String{
-
-        val errorCodes = HashMap<String, String>()
+    fun saveV1(@ModelAttribute item : Item, bindingResult : BindingResult, rda : RedirectAttributes, model : Model): String{
 
         if (item.itemName.isBlank()) {
-            errorCodes["itemName"] = "상품 이름을 입력해주세요."
+            // 1. 오류가 발생한 필드 값을 지우는 방식
+            // bindingResult.addError(FieldError("item","itemName","상품 이름을 입력해주세요."))
+
+            // 2. 오류가 발생한 필드 값을 복원하는 방식
+            bindingResult.addError(FieldError("item","itemName", item.itemName, false, arrayOf("required_item.itemName"), null, "상품 이름을 입력해주세요."))
         }
         if (item.price < 1000 || item.price > 1000000 ){
-            errorCodes["itemPrice"] = "상품 가격은 1,000원 이상, 1,000,000 원 이하까지 허용 됩니다."
+            // 1. 오류가 발생한 필드 값을 지우는 방식
+            // bindingResult.addError(FieldError("item","price","상품 가격은 1,000원 이상, 1,000,000 원 이하까지 허용 됩니다."))
+
+            // 2. 오류가 발생한 필드 값을 복원하는 방식
+            bindingResult.addError(FieldError("item","price",item.price,false, arrayOf("range.item.price"), arrayOf(1000,1000000),"상품 가격은 1,000원 이상, 1,000,000 원 이하까지 허용 됩니다."))
         }
         if (item.quantity < 1 || item.quantity > 9999) {
-            errorCodes["itemQuantity"] = "상품 수량은 1개 이상, 9999개 이하까지 허용 됩니다."
-        }
-        if (item.price * item.quantity < 10000) {
-            errorCodes["globalError"] = "상품 가격 x 상품 수량은 10,000 이상이어야 합니다. 현재 값 = ${item.price * item.quantity}"
+            // 1. 오류가 발생한 필드 값을 지우는 방식
+            // bindingResult.addError(FieldError("item","quantity","상품 수량은 1개 이상, 9999개 이하까지 허용 됩니다."))
+
+            // 2. 오류가 발생한 필드 값을 복원하는 방식
+            bindingResult.addError(FieldError("item","quantity",item.quantity,false, arrayOf("max.item.quantity"),
+                arrayOf(9999),"상품 수량은 1개 이상, 9999개 이하까지 허용 됩니다."))
         }
 
-        if (errorCodes.isNotEmpty()) {
-            logger.info { "errorCodes = ${errorCodes.entries}" }
-            model.addAttribute("errorCodes", errorCodes)
+        val totalPrice = item.price * item.quantity
+        if (totalPrice < 10000) {
+            bindingResult.addError(ObjectError("item", arrayOf("totalPriceMin"), arrayOf(10000,totalPrice),"알 수 없는 오류가 발생했습니다. 관리자에게 문의해주세요"))
+//            bindingResult.addError(ObjectError("item","상품 가격 x 상품 수량은 10,000 이상이어야 합니다. 현재 값 = ${item.price * item.quantity}"))
+        }
+
+        if (bindingResult.hasErrors()) {
+            logger.info { "errors = $bindingResult" }
             return "basic/addForm"
         }
 
