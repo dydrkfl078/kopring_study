@@ -1,7 +1,9 @@
 package kopringprac.registration.web.basic
 
+import kopringprac.registration.domain.item.DeliveryCodes
 import kopringprac.registration.domain.item.Item
 import kopringprac.registration.domain.item.ItemRepo
+import kopringprac.registration.domain.item.ItemType
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
@@ -9,9 +11,7 @@ import org.springframework.web.bind.annotation.ModelAttribute
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.servlet.mvc.support.RedirectAttributes
-import kotlin.reflect.jvm.internal.impl.util.MemberKindCheck.Member
 
 @Controller
 @RequestMapping("/basic/items")
@@ -25,11 +25,27 @@ class BasicItemController(private val itemRepo: ItemRepo) {
     @ModelAttribute("regions")
     fun regions(): LinkedHashMap<String, String> {
         val regions = LinkedHashMap<String, String>()
-        regions.put("SEOUL","서울")
-        regions.put("ILSAN","일산")
-        regions.put("GURI","구리")
+        regions["SEOUL"] = "서울"
+        regions["ILSAN"] = "일산"
+        regions["GURI"] = "구리"
 
         return regions
+    }
+
+    @ModelAttribute("itemTypes")
+    fun itemTypes(): List<ItemType> {
+        return ItemType.entries
+    }
+
+    @ModelAttribute("deliveryCodes")
+    fun deliveryCodes(): List<DeliveryCodes> {
+        val deliverCodeList = mutableListOf<DeliveryCodes>()
+            .apply {
+                add(DeliveryCodes("FAST","빠른 배송"))
+                add(DeliveryCodes("NORMAL","일반 배송"))
+                add(DeliveryCodes("SLOW","느린 배송"))
+            }
+        return deliverCodeList
     }
 
     @GetMapping

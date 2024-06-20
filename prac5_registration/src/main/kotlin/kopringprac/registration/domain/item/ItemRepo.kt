@@ -33,6 +33,8 @@ class ItemRepo {
             store[id] = changeItem
             regions = updateItem.regions
             open = updateItem.open
+            itemType = updateItem.itemType
+            deliveryCode = updateItem.deliveryCode
         }
     }
 

@@ -8,4 +8,6 @@ class Item(
 ) {
     var id : Long? = null
     var regions = listOf<String>()
+    var itemType : String = ""
+    var deliveryCode : String = ""
 }
