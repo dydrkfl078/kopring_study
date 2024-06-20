@@ -7,6 +7,10 @@
         .container {
             max-width: 560px;
         }
+        .field-error {
+            color: #e70d20;
+            border-color: #e70d20;
+        }
     </style>
 </head>
 <body>
@@ -14,20 +18,29 @@
     <div class="py-5 text-center">
         <h2 th:text="#{title.addItem}">상품 등록 폼</h2>
     </div>
+    <div th:if="${errorCodes?.containsKey('globalError')}">
+        <p class="field-error" th:text="${errorCodes['globalError']}"></p>
+    </div>
     <h4 class="mb-3">상품 입력</h4>
     <form action="item.html" th:action method="post">
         <div>
             <label for="itemName">상품명</label>
-            <input type="text" id="itemName" name="itemName" class="formcontrol" placeholder="이름을 입력하세요">
+            <input type="text" id="itemName" th:field="${item.itemName}"
+                   th:class="${errorCodes?.containsKey('itemName')} ? 'form-control field-error' :'form-control'"
+                   class="form-control" placeholder="이름을 입력하세요">
+            <p class="field-error" th:if="${errorCodes?.containsKey('itemName')}" th:text="${errorCodes['itemName']}"></p>
         </div>
         <div>
             <label for="price">가격</label>
-            <input type="text" id="price" name="price" class="form-control"
-                   placeholder="가격을 입력하세요">
+            <input type="text" id="price" th:field="${item.price}" th:classappend="${errorCodes?.containsKey('itemPrice')} ? 'field-error' : _"
+                   class="form-control" placeholder="가격을 입력하세요">
+            <div class="field-error" th:if="${errorCodes?.containsKey('itemPrice')}" th:text="${errorCodes['itemPrice']}"></div>
         </div>
         <div>
             <label for="quantity">수량</label>
-            <input type="text" id="quantity" name="quantity" class="formcontrol" placeholder="수량을 입력하세요">
+            <input type="text" id="quantity" th:field="${item.quantity}" th:class="${errorCodes?.containsKey('itemQuantity')} ? 'form-control field-error' : 'form-control'"
+                   class="form-control" placeholder="수량을 입력하세요">
+            <div class="field-error" th:if="${errorCodes?.containsKey('itemQuantity')}" th:text="${errorCodes['itemQuantity']}"></div>
         </div>
         <div>판매여부</div>
         <div>

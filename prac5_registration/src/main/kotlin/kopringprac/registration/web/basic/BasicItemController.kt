@@ -1,5 +1,6 @@
 package kopringprac.registration.web.basic
 
+import io.github.oshai.kotlinlogging.KotlinLogging
 import kopringprac.registration.domain.item.DeliveryCodes
 import kopringprac.registration.domain.item.Item
 import kopringprac.registration.domain.item.ItemRepo
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.servlet.mvc.support.RedirectAttributes
+
+private val logger = KotlinLogging.logger {  }
 
 @Controller
 @RequestMapping("/basic/items")
@@ -83,7 +86,28 @@ class BasicItemController(private val itemRepo: ItemRepo) {
     // @ModelAttribute("item") 으로 명시적으로 Model.setAttribute 해줄 수 있으나, 생략할 시 자동으로 클래스 이름으로 생성.
     // @ModelAttribute 자체도 생략이 가능하지만... 왠만하면 명시적으로 적어주는 것이 직관적이고 좋을 것 같다.
     @PostMapping("/add")
-    fun saveV2(@ModelAttribute item : Item, rda : RedirectAttributes): String{
+    fun saveV2(@ModelAttribute item : Item, rda : RedirectAttributes, model : Model): String{
+
+        val errorCodes = HashMap<String, String>()
+
+        if (item.itemName.isBlank()) {
+            errorCodes["itemName"] = "상품 이름을 입력해주세요."
+        }
+        if (item.price < 1000 || item.price > 1000000 ){
+            errorCodes["itemPrice"] = "상품 가격은 1,000원 이상, 1,000,000 원 이하까지 허용 됩니다."
+        }
+        if (item.quantity < 1 || item.quantity > 9999) {
+            errorCodes["itemQuantity"] = "상품 수량은 1개 이상, 9999개 이하까지 허용 됩니다."
+        }
+        if (item.price * item.quantity < 10000) {
+            errorCodes["globalError"] = "상품 가격 x 상품 수량은 10,000 이상이어야 합니다. 현재 값 = ${item.price * item.quantity}"
+        }
+
+        if (errorCodes.isNotEmpty()) {
+            logger.info { "errorCodes = ${errorCodes.entries}" }
+            model.addAttribute("errorCodes", errorCodes)
+            return "basic/addForm"
+        }
 
         itemRepo.save(item)
         rda.addAttribute("saveItem",item.id)
