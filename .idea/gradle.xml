@@ -65,6 +65,15 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/prac7_login" />
+        <option name="gradleJvm" value="graalvm-jdk-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/prac7_login" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
