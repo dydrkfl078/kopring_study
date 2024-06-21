@@ -5,11 +5,13 @@ import kopringprac.registration.domain.item.DeliveryCodes
 import kopringprac.registration.domain.item.Item
 import kopringprac.registration.domain.item.ItemRepo
 import kopringprac.registration.domain.item.ItemType
+import kopringprac.registration.web.validator.ItemValidator
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.validation.BindingResult
 import org.springframework.validation.FieldError
 import org.springframework.validation.ObjectError
+import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.WebDataBinder
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.mvc.support.RedirectAttributes
@@ -20,11 +22,16 @@ private val logger = KotlinLogging.logger {  }
 
 @Controller
 @RequestMapping("/basic/items")
-class BasicItemController(private val itemRepo: ItemRepo) {
+class BasicItemController(private val itemRepo: ItemRepo, private val itemValidator: ItemValidator) {
 
     init {
         itemRepo.save(Item("testItemA", 50000, 30, false))
         itemRepo.save(Item("testItemB", 20000, 8, true))
+    }
+
+    @InitBinder
+    fun initBinder(binder: WebDataBinder) {
+        binder.addValidators(itemValidator)
     }
 
     @ModelAttribute("regions")
@@ -76,55 +83,7 @@ class BasicItemController(private val itemRepo: ItemRepo) {
     // @ModelAttribute("item") 으로 명시적으로 Model.setAttribute 해줄 수 있으나, 생략할 시 자동으로 클래스 이름으로 생성.
     // @ModelAttribute 자체도 생략이 가능하지만... 왠만하면 명시적으로 적어주는 것이 직관적이고 좋을 것 같다.
     @PostMapping("/add")
-    fun saveV1(@ModelAttribute item : Item, bindingResult : BindingResult, rda : RedirectAttributes, model : Model): String{
-
-        logger.info { "objectName = ${bindingResult.objectName}" }
-        logger.info { "target = ${bindingResult.target}" }
-
-
-        if (item.itemName.isBlank()) {
-            // 1. 오류가 발생한 필드 값을 지우는 방식
-            // bindingResult.addError(FieldError("item","itemName","상품 이름을 입력해주세요."))
-
-
-            // 2. 오류가 발생한 필드 값을 복원하는 방식
-            // bindingResult.addError(FieldError("item","itemName", item.itemName, false, arrayOf("required_item.itemName"), null, "상품 이름을 입력해주세요."))
-
-            bindingResult.rejectValue("itemName", "required")
-        }
-        item.price?.let { price ->
-            if (price < 1000 || price > 1000000 ){
-                // 1. 오류가 발생한 필드 값을 지우는 방식
-                // bindingResult.addError(FieldError("item","price","상품 가격은 1,000원 이상, 1,000,000 원 이하까지 허용 됩니다."))
-
-                // 2. 오류가 발생한 필드 값을 복원하는 방식
-                // bindingResult.addError(FieldError("item","price",item.price,false, arrayOf("range.item.price"), arrayOf(1000,1000000),"상품 가격은 1,000원 이상, 1,000,000 원 이하까지 허용 됩니다."))
-
-                bindingResult.rejectValue("price", "range", arrayOf(1000,1000000), null)
-            }
-        }
-
-        item.quantity?.let { quantity ->
-            if (quantity < 1 || quantity > 9999) {
-                // 1. 오류가 발생한 필드 값을 지우는 방식
-                // bindingResult.addError(FieldError("item","quantity","상품 수량은 1개 이상, 9999개 이하까지 허용 됩니다."))
-
-                // 2. 오류가 발생한 필드 값을 복원하는 방식
-                //bindingResult.addError(FieldError("item","quantity",item.quantity,false, arrayOf("max.item.quantity"),
-                //    arrayOf(9999),"상품 수량은 1개 이상, 9999개 이하까지 허용 됩니다."))
-
-                bindingResult.rejectValue("quantity","max", arrayOf(9999),null)
-            }
-        }
-
-        val price = item.price?:0
-        val quantity = item.quantity?:0
-        val totalPrice = price * quantity
-        if (totalPrice < 10000) {
-//            bindingResult.addError(ObjectError("item", arrayOf("totalPriceMin"), arrayOf(10000,totalPrice),"알 수 없는 오류가 발생했습니다. 관리자에게 문의해주세요"))
-
-            bindingResult.reject("totalPriceMin", arrayOf(1000,totalPrice),null)
-        }
+    fun saveV1(@Validated @ModelAttribute item : Item, bindingResult : BindingResult, rda : RedirectAttributes, model : Model): String{
 
         if (bindingResult.hasErrors()) {
             logger.info { "errors = ${bindingResult.allErrors}" }
@@ -147,7 +106,13 @@ class BasicItemController(private val itemRepo: ItemRepo) {
     }
 
     @PostMapping("/{itemId}/edit")
-    fun edit(@PathVariable itemId: Long,@ModelAttribute item : Item): String {
+    fun edit(@Validated @ModelAttribute item : Item, bindingResult: BindingResult, @PathVariable itemId: Long): String {
+
+        if (bindingResult.hasErrors()) {
+            logger.info { "errors = ${bindingResult.allErrors}" }
+            return "basic/editForm"
+        }
+
         itemRepo.update(item.id!!,item)
         return "redirect:/basic/items/{itemId}"
     }
