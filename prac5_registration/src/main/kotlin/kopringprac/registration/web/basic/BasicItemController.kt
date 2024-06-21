@@ -8,6 +8,8 @@ import kopringprac.registration.domain.item.ItemType
 import kopringprac.registration.web.validator.EditCheck
 import kopringprac.registration.web.validator.ItemValidator
 import kopringprac.registration.web.validator.SaveCheck
+import kopringprac.registration.web.validator.form.ItemEditForm
+import kopringprac.registration.web.validator.form.ItemSaveForm
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.validation.BindingResult
@@ -86,12 +88,12 @@ class BasicItemController(private val itemRepo: ItemRepo) {
     // @ModelAttribute("item") 으로 명시적으로 Model.setAttribute 해줄 수 있으나, 생략할 시 자동으로 클래스 이름으로 생성.
     // @ModelAttribute 자체도 생략이 가능하지만... 왠만하면 명시적으로 적어주는 것이 직관적이고 좋을 것 같다.
     @PostMapping("/add")
-    fun saveV1(@Validated(SaveCheck::class) @ModelAttribute item : Item, bindingResult : BindingResult, rda : RedirectAttributes, model : Model): String{
+    fun saveV1(@Validated @ModelAttribute("item") itemSaveForm : ItemSaveForm, bindingResult : BindingResult, rda : RedirectAttributes, model : Model): String{
 
         logger.info { "target = ${bindingResult.target}" }
 
-        val price = item.price?:0
-        val quantity = item.quantity?:0
+        val price = itemSaveForm.price?:0
+        val quantity = itemSaveForm.quantity?:0
         val totalPrice = price * quantity
         if (totalPrice < 10000) {
             bindingResult.reject("totalPriceMin", arrayOf(1000,totalPrice),null)
@@ -102,9 +104,12 @@ class BasicItemController(private val itemRepo: ItemRepo) {
             return "basic/addForm"
         }
 
-        itemRepo.save(item)
-        rda.addAttribute("saveItem",item.id)
-        rda.addAttribute("state", true)
+        itemSaveForm.also { form ->
+            val item = Item(form.id,form.itemName,form.price,form.quantity,form.open,form.regions,form.itemType,form.deliveryCode)
+            itemRepo.save(item)
+            rda.addAttribute("saveItem",item.id)
+            rda.addAttribute("state", true)
+        }
 
         return "redirect:/basic/items/{saveItem}"
     }
@@ -118,12 +123,12 @@ class BasicItemController(private val itemRepo: ItemRepo) {
     }
 
     @PostMapping("/{itemId}/edit")
-    fun edit(@PathVariable itemId: Long, @Validated(EditCheck::class) @ModelAttribute item : Item, bindingResult: BindingResult, rda: RedirectAttributes): String {
+    fun edit(@PathVariable itemId: Long, @Validated @ModelAttribute("item") itemEditForm : ItemEditForm, bindingResult: BindingResult, rda: RedirectAttributes): String {
 
         logger.info { "target = ${bindingResult.target}" }
 
-        val price = item.price?:0
-        val quantity = item.quantity?:0
+        val price = itemEditForm.price?:0
+        val quantity = itemEditForm.quantity?:0
         val totalPrice = price * quantity
         if (totalPrice < 10000) {
             bindingResult.reject("totalPriceMin", arrayOf(1000,totalPrice),null)
@@ -131,14 +136,14 @@ class BasicItemController(private val itemRepo: ItemRepo) {
 
         if (bindingResult.hasErrors()) {
             logger.info { "errors = ${bindingResult.allErrors}" }
-            logger.info { "item.id = ${item.id}" }
-            logger.info { "item.id = ${item.itemName}" }
-            logger.info { "item.itemType = ${item.itemType}" }
 
             return "basic/editForm"
         }
 
-        itemRepo.update(item.id!!,item)
+        itemEditForm.also { form ->
+            itemRepo.update(itemEditForm.id!!,Item(form.id,form.itemName,form.price,form.quantity,form.open,form.regions,form.itemType,form.deliveryCode))
+        }
+
         return "redirect:/basic/items/{itemId}"
     }
 }
