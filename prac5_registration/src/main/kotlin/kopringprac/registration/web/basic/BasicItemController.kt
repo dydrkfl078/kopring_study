@@ -5,7 +5,9 @@ import kopringprac.registration.domain.item.DeliveryCodes
 import kopringprac.registration.domain.item.Item
 import kopringprac.registration.domain.item.ItemRepo
 import kopringprac.registration.domain.item.ItemType
+import kopringprac.registration.web.validator.EditCheck
 import kopringprac.registration.web.validator.ItemValidator
+import kopringprac.registration.web.validator.SaveCheck
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.validation.BindingResult
@@ -84,7 +86,7 @@ class BasicItemController(private val itemRepo: ItemRepo) {
     // @ModelAttribute("item") 으로 명시적으로 Model.setAttribute 해줄 수 있으나, 생략할 시 자동으로 클래스 이름으로 생성.
     // @ModelAttribute 자체도 생략이 가능하지만... 왠만하면 명시적으로 적어주는 것이 직관적이고 좋을 것 같다.
     @PostMapping("/add")
-    fun saveV1(@Validated @ModelAttribute item : Item, bindingResult : BindingResult, rda : RedirectAttributes, model : Model): String{
+    fun saveV1(@Validated(SaveCheck::class) @ModelAttribute item : Item, bindingResult : BindingResult, rda : RedirectAttributes, model : Model): String{
 
         logger.info { "target = ${bindingResult.target}" }
 
@@ -116,7 +118,7 @@ class BasicItemController(private val itemRepo: ItemRepo) {
     }
 
     @PostMapping("/{itemId}/edit")
-    fun edit(@PathVariable itemId: Long, @Validated @ModelAttribute item : Item, bindingResult: BindingResult, rda: RedirectAttributes): String {
+    fun edit(@PathVariable itemId: Long, @Validated(EditCheck::class) @ModelAttribute item : Item, bindingResult: BindingResult, rda: RedirectAttributes): String {
 
         logger.info { "target = ${bindingResult.target}" }
 
