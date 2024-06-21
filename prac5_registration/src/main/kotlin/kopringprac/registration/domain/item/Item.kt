@@ -2,8 +2,8 @@ package kopringprac.registration.domain.item
 
 class Item(
     var itemName : String = "",
-    var price : Int = 0,
-    var quantity : Int = 0,
+    var price : Int?,
+    var quantity : Int?,
     var open : Boolean = false
 ) {
     var id : Long? = null
