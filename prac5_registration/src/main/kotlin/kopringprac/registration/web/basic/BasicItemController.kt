@@ -17,21 +17,22 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.mvc.support.RedirectAttributes
 import java.beans.PropertyEditorSupport
 import java.lang.reflect.Field
+import kotlin.math.log
 
 private val logger = KotlinLogging.logger {  }
 
 @Controller
 @RequestMapping("/basic/items")
-class BasicItemController(private val itemRepo: ItemRepo, private val itemValidator: ItemValidator) {
+class BasicItemController(private val itemRepo: ItemRepo) {
 
     init {
-        itemRepo.save(Item("testItemA", 50000, 30, false))
-        itemRepo.save(Item("testItemB", 20000, 8, true))
+        itemRepo.save(Item(itemName = "testItemA", price = 50000, quantity =  30, open = false))
+        itemRepo.save(Item(itemName = "testItemB", price = 20000, quantity = 8, open = true))
     }
 
     @InitBinder
-    fun initBinder(binder: WebDataBinder) {
-        binder.addValidators(itemValidator)
+    fun integerBinder(binder: WebDataBinder) {
+        binder.registerCustomEditor(Int::class.java, IntEditor())
     }
 
     @ModelAttribute("regions")
@@ -85,6 +86,15 @@ class BasicItemController(private val itemRepo: ItemRepo, private val itemValida
     @PostMapping("/add")
     fun saveV1(@Validated @ModelAttribute item : Item, bindingResult : BindingResult, rda : RedirectAttributes, model : Model): String{
 
+        logger.info { "target = ${bindingResult.target}" }
+
+        val price = item.price?:0
+        val quantity = item.quantity?:0
+        val totalPrice = price * quantity
+        if (totalPrice < 10000) {
+            bindingResult.reject("totalPriceMin", arrayOf(1000,totalPrice),null)
+        }
+
         if (bindingResult.hasErrors()) {
             logger.info { "errors = ${bindingResult.allErrors}" }
             return "basic/addForm"
@@ -106,14 +116,33 @@ class BasicItemController(private val itemRepo: ItemRepo, private val itemValida
     }
 
     @PostMapping("/{itemId}/edit")
-    fun edit(@Validated @ModelAttribute item : Item, bindingResult: BindingResult, @PathVariable itemId: Long): String {
+    fun edit(@PathVariable itemId: Long, @Validated @ModelAttribute item : Item, bindingResult: BindingResult, rda: RedirectAttributes): String {
+
+        logger.info { "target = ${bindingResult.target}" }
+
+        val price = item.price?:0
+        val quantity = item.quantity?:0
+        val totalPrice = price * quantity
+        if (totalPrice < 10000) {
+            bindingResult.reject("totalPriceMin", arrayOf(1000,totalPrice),null)
+        }
 
         if (bindingResult.hasErrors()) {
             logger.info { "errors = ${bindingResult.allErrors}" }
+            logger.info { "item.id = ${item.id}" }
+            logger.info { "item.id = ${item.itemName}" }
+            logger.info { "item.itemType = ${item.itemType}" }
+
             return "basic/editForm"
         }
 
         itemRepo.update(item.id!!,item)
         return "redirect:/basic/items/{itemId}"
+    }
+}
+
+class IntEditor : PropertyEditorSupport() {
+    override fun setAsText(text: String?) {
+        value = text?.toIntOrNull()
     }
 }
