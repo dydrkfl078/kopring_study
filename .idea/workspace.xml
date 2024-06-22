@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":notebook:Thymeleaf 체크박스, 라디오, 선택목록 학습">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":tada:Login - 쿠키,세션 학습 시작">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/resources/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +75,10 @@
         <option value="package-info" />
         <option value="Kotlin Data Class" />
         <option value="JUnit5 Test Class" />
-        <option value="HTML File" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -113,6 +113,7 @@
     "Gradle.Build prac3_servlet.executor": "Run",
     "Gradle.Build prac4_springmvc.executor": "Run",
     "Gradle.Build prac5_registration.executor": "Run",
+    "Gradle.Build prac7_login.executor": "Run",
     "Gradle.ComponentFilterTest.excludeFilter.executor": "Run",
     "Gradle.ComponentFilterTest.executor": "Run",
     "Gradle.ItemRepoTest.executor": "Run",
@@ -149,6 +150,7 @@
     "Spring Boot.CoreApplication.executor": "Run",
     "Spring Boot.Prac3ServletApplication.executor": "Run",
     "Spring Boot.Prac4SpringmvcApplication.executor": "Run",
+    "Spring Boot.Prac6LoginApplication.executor": "Run",
     "Spring Boot.RegistrationApplication.executor": "Run",
     "Spring Boot.SpringmvcApplication.executor": "Run",
     "Spring Boot.ThymeleafApplication.executor": "Run",
@@ -156,7 +158,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac7_login/build.gradle.kts",
+    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac7_login/src/main/resources/static/css",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -178,6 +180,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\june\Desktop\kopring_workspace\prac7_login\src\main\resources\static\css" />
       <recent name="C:\Users\june\Desktop\kopring_workspace\prac5_registration\src\main\resources\static\css" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -217,7 +220,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RegistrationApplication">
+  <component name="RunManager" selected="Spring Boot.Prac6LoginApplication">
     <configuration name="ItemRepoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -266,30 +269,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ItemRepoTest.findById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/prac5_registration" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;kopringprac.registration.domain.item.ItemRepoTest.findById&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="ItemRepoTest.update" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -314,6 +293,19 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Prac6LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="prac6_login.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kopring.prac6_login.Prac6LoginApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kopring.prac6_login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="registration.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="kopringprac.registration.RegistrationApplication" />
@@ -330,17 +322,17 @@
     <list>
       <item itemvalue="Gradle.ItemRepoTest" />
       <item itemvalue="Gradle.ItemRepoTest.findAll" />
-      <item itemvalue="Gradle.ItemRepoTest.findById" />
       <item itemvalue="Gradle.ItemRepoTest.update" />
+      <item itemvalue="Spring Boot.Prac6LoginApplication" />
       <item itemvalue="Spring Boot.RegistrationApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Prac6LoginApplication" />
         <item itemvalue="Spring Boot.RegistrationApplication" />
         <item itemvalue="Gradle.ItemRepoTest" />
         <item itemvalue="Gradle.ItemRepoTest.findAll" />
         <item itemvalue="Gradle.ItemRepoTest.update" />
-        <item itemvalue="Gradle.ItemRepoTest.findById" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +359,7 @@
       <workItem from="1718031891147" duration="76210000" />
       <workItem from="1718369754934" duration="12979000" />
       <workItem from="1718390483465" duration="86319000" />
-      <workItem from="1718919471867" duration="27271000" />
+      <workItem from="1718919471867" duration="37177000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
@@ -441,7 +433,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718845288293</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=":zap:Validation- requestBody validation controller 학습">
+      <option name="closed" value="true" />
+      <created>1718964107912</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718964107912</updated>
+    </task>
+    <task id="LOCAL-00011" summary=":tada:Login - 쿠키,세션 학습 시작">
+      <option name="closed" value="true" />
+      <created>1718964157527</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718964157527</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +476,9 @@
     <MESSAGE value=":books:Thymeleaf 문법 학습&#10;- 반복문&#10;- 주석&#10;- block 태그&#10;- text 설정 및 html 태그 class 추가" />
     <MESSAGE value=":pencil:Fix-html 태그 닫기 오류 수정" />
     <MESSAGE value=":notebook:Thymeleaf 체크박스, 라디오, 선택목록 학습" />
-    <option name="LAST_COMMIT_MESSAGE" value=":notebook:Thymeleaf 체크박스, 라디오, 선택목록 학습" />
+    <MESSAGE value=":zap:Validation- requestBody validation controller 학습" />
+    <MESSAGE value=":tada:Login - 쿠키,세션 학습 시작" />
+    <option name="LAST_COMMIT_MESSAGE" value=":tada:Login - 쿠키,세션 학습 시작" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
