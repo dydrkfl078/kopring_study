@@ -1,7 +1,10 @@
 package kopring.prac6_login.web.login
 
 import io.github.oshai.kotlinlogging.KotlinLogging
+import jakarta.servlet.http.HttpServletRequest
 import kopring.prac6_login.domain.login.LoginService
+import kopring.prac6_login.web.session.SessionConst
+import kopring.prac6_login.web.session.SessionManager
 import org.springframework.stereotype.Controller
 import org.springframework.validation.BindingResult
 import org.springframework.validation.annotation.Validated
@@ -14,7 +17,7 @@ private val logger = KotlinLogging.logger {  }
 
 @Controller
 @RequestMapping("/login")
-class LoginController(private val loginService: LoginService) {
+class LoginController(private val loginService: LoginService, private val sessionManager: SessionManager) {
 
     @GetMapping
     fun loginForm (@ModelAttribute("loginForm") form: LoginForm): String {
@@ -22,7 +25,7 @@ class LoginController(private val loginService: LoginService) {
     }
 
     @PostMapping
-    fun login(@Validated @ModelAttribute("loginForm") form: LoginForm, bindingResult: BindingResult):  String {
+    fun login(@Validated @ModelAttribute("loginForm") form: LoginForm, bindingResult: BindingResult, request : HttpServletRequest):  String {
 
         if (bindingResult.hasErrors()) {
             logger.info { "errors = $bindingResult" }
@@ -38,6 +41,13 @@ class LoginController(private val loginService: LoginService) {
         }
 
         // todo 로그인 성공 처리
+
+        // 1. Custom session 적용
+        // sessionManager.createSession(loginMember.id!!, response)
+
+        // 2. Servlet http session 적용
+        request.session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember)
+
         return "redirect:/home"
     }
 }

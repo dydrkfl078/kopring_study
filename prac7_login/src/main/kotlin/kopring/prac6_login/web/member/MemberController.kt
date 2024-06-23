@@ -28,7 +28,7 @@ class MemberController(private val memberRepo : MemberRepo) {
 
         if (bindingResult.hasErrors()) {
             logger.info { "errors = $bindingResult" }
-            return "members/addForm"
+            return "members/addMemberForm"
         }
 
         memberRepo.save(member)

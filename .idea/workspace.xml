@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":tada:Login - 쿠키,세션 학습 시작">
+      <change afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/session/SessionConst.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/session/SessionManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prac7_login/src/main/resources/templates/loginHome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/HomeController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/HomeController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/login/LoginController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/login/LoginController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/member/MemberController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/member/MemberController.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +82,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="HTML File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -359,7 +364,7 @@
       <workItem from="1718031891147" duration="76210000" />
       <workItem from="1718369754934" duration="12979000" />
       <workItem from="1718390483465" duration="86319000" />
-      <workItem from="1718919471867" duration="37177000" />
+      <workItem from="1718919471867" duration="49756000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
