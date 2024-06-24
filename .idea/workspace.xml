@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":cookie:Login - 쿠키,세션 적용 학습 上&#10;- CookieValue()를 통해 쿠키 및 세션 적용&#10;- Servlet http 세션 적용">
+    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":notebook: 필터, 인터셉터 학습">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/HomeController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/HomeController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/login/LoginController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/login/LoginController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/WebConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/WebConfig.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Annotation" />
         <option value="Kotlin File" />
         <option value="Jsp File" />
         <option value="Kotlin Object" />
@@ -80,6 +78,7 @@
         <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
         <option value="HTML File" />
+        <option value="Kotlin Annotation" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -362,7 +361,7 @@
       <workItem from="1718369754934" duration="12979000" />
       <workItem from="1718390483465" duration="86319000" />
       <workItem from="1718919471867" duration="54406000" />
-      <workItem from="1719190513212" duration="19035000" />
+      <workItem from="1719190513212" duration="22434000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
@@ -460,7 +459,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719132216125</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=":notebook: 필터, 인터셉터 학습">
+      <option name="closed" value="true" />
+      <created>1719220164540</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719220164540</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +497,8 @@
     <MESSAGE value=":zap:Validation- requestBody validation controller 학습" />
     <MESSAGE value=":tada:Login - 쿠키,세션 학습 시작" />
     <MESSAGE value=":cookie:Login - 쿠키,세션 적용 학습 上&#10;- CookieValue()를 통해 쿠키 및 세션 적용&#10;- Servlet http 세션 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value=":cookie:Login - 쿠키,세션 적용 학습 上&#10;- CookieValue()를 통해 쿠키 및 세션 적용&#10;- Servlet http 세션 적용" />
+    <MESSAGE value=":notebook: 필터, 인터셉터 학습" />
+    <option name="LAST_COMMIT_MESSAGE" value=":notebook: 필터, 인터셉터 학습" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -4,6 +4,7 @@ import io.github.oshai.kotlinlogging.KotlinLogging
 import jakarta.servlet.http.HttpServletRequest
 import kopring.prac6_login.domain.member.Member
 import kopring.prac6_login.domain.member.MemberRepo
+import kopring.prac6_login.web.argument_resolver.Login
 import kopring.prac6_login.web.session.SessionConst
 import kopring.prac6_login.web.session.SessionManager
 import kopring.prac6_login.web.session.SessionManager.Companion.SESSION_ID
@@ -44,7 +45,7 @@ class HomeController (private val memberRepo : MemberRepo, private val sessionMa
 
     // Spring, Servlet http session 통합
     @GetMapping("/home")
-    fun homeV3(@SessionAttribute(name = SessionConst.LOGIN_MEMBER, required = false) loginMember : Member?, model: Model):String {
+    fun homeV3(@Login loginMember : Member?, model: Model):String {
 
         model.addAttribute("member",loginMember ?: return "home")
 
