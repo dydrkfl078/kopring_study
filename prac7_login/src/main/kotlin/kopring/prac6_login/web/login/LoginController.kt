@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.ModelAttribute
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestParam
 
 private val logger = KotlinLogging.logger {  }
 
@@ -25,7 +26,9 @@ class LoginController(private val loginService: LoginService, private val sessio
     }
 
     @PostMapping
-    fun login(@Validated @ModelAttribute("loginForm") form: LoginForm, bindingResult: BindingResult, request : HttpServletRequest):  String {
+    fun login(@Validated @ModelAttribute("loginForm") form: LoginForm, bindingResult: BindingResult,
+              @RequestParam(defaultValue = "home")  redirectURL : String,
+              request : HttpServletRequest):  String {
 
         if (bindingResult.hasErrors()) {
             logger.info { "errors = $bindingResult" }
@@ -48,6 +51,6 @@ class LoginController(private val loginService: LoginService, private val sessio
         // 2. Servlet http session 적용
         request.session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember)
 
-        return "redirect:/home"
+        return "redirect:$redirectURL"
     }
 }

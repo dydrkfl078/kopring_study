@@ -9,9 +9,8 @@ import kopring.prac6_login.web.session.SessionManager
 import kopring.prac6_login.web.session.SessionManager.Companion.SESSION_ID
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
-import org.springframework.web.bind.annotation.CookieValue
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.*
+import org.springframework.web.bind.support.SessionStatus
 
 private val logger = KotlinLogging.logger {  }
 
@@ -31,7 +30,7 @@ class HomeController (private val memberRepo : MemberRepo, private val sessionMa
     }
 
     // Servlet Http Session 적용.
-    @GetMapping("/home")
+//    @GetMapping("/home")
     fun homeV2(request : HttpServletRequest, model: Model):String {
 
         val session = request.getSession(false) ?: return "home"
@@ -39,6 +38,15 @@ class HomeController (private val memberRepo : MemberRepo, private val sessionMa
         val loginMember = session.getAttribute(SessionConst.LOGIN_MEMBER) as Member? ?: return "home"
 
         model.addAttribute("member",loginMember)
+
+        return "loginHome"
+    }
+
+    // Spring, Servlet http session 통합
+    @GetMapping("/home")
+    fun homeV3(@SessionAttribute(name = SessionConst.LOGIN_MEMBER, required = false) loginMember : Member?, model: Model):String {
+
+        model.addAttribute("member",loginMember ?: return "home")
 
         return "loginHome"
     }
@@ -54,4 +62,5 @@ class HomeController (private val memberRepo : MemberRepo, private val sessionMa
 
         return "redirect:/home"
     }
+
 }

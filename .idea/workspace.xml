@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":tada:Login - 쿠키,세션 학습 시작">
-      <change afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/session/SessionConst.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/session/SessionManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prac7_login/src/main/resources/templates/loginHome.html" afterDir="false" />
+    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":cookie:Login - 쿠키,세션 적용 학습 上&#10;- CookieValue()를 통해 쿠키 및 세션 적용&#10;- Servlet http 세션 적용">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/HomeController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/HomeController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/login/LoginController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/login/LoginController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/member/MemberController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/kotlin/kopring/prac6_login/web/member/MemberController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac7_login/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/prac7_login/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,83 +103,83 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.AllBeanTest.findAllBean.executor": "Run",
-    "Gradle.AutoAppConfigTest.findBeanWithAutoAppConfig.executor": "Run",
-    "Gradle.AutowiredOptionTest.autowiredOption.executor": "Run",
-    "Gradle.BeanLifecycleTest.beanLifecycleTest.executor": "Run",
-    "Gradle.BeanScopeTest.prototypeBeanScopeTest.executor": "Run",
-    "Gradle.Build prac2_core.executor": "Run",
-    "Gradle.Build prac3_servlet.executor": "Run",
-    "Gradle.Build prac4_springmvc.executor": "Run",
-    "Gradle.Build prac5_registration.executor": "Run",
-    "Gradle.Build prac7_login.executor": "Run",
-    "Gradle.ComponentFilterTest.excludeFilter.executor": "Run",
-    "Gradle.ComponentFilterTest.executor": "Run",
-    "Gradle.ItemRepoTest.executor": "Run",
-    "Gradle.ItemRepoTest.findAll.executor": "Run",
-    "Gradle.ItemRepoTest.findById.executor": "Run",
-    "Gradle.ItemRepoTest.save.executor": "Run",
-    "Gradle.ItemRepoTest.update.executor": "Run",
-    "Gradle.MemberRepoTest.executor": "Run",
-    "Gradle.MemberRepoTest.findAll.executor": "Run",
-    "Gradle.MemberRepoTest.save.executor": "Run",
-    "Gradle.MemberServiceTets.join.executor": "Run",
-    "Gradle.OrderServiceTest.executor": "Run",
-    "Gradle.OrderServiceTest.할인정책이반영된주문을만든다.executor": "Run",
-    "Gradle.SingletonServiceTest.singletonServiceIsSingleton.executor": "Run",
-    "Gradle.SingletonServiceTest.singletonSpringBeanParam.executor": "Run",
-    "Gradle.SingletonServiceTest.singletonSpringContainerInstance.executor": "Run",
-    "Gradle.SpringBeanTest.executor": "Run",
-    "Gradle.SpringBeanTest.findAllBean.executor": "Run",
-    "Gradle.SpringBeanTest.findBeanByTypeDuplicate.executor": "Run",
-    "Gradle.SpringBeanTest.findBeanName.executor": "Run",
-    "Gradle.SpringBeanTest.findBeanName_X.executor": "Run",
-    "Gradle.SpringBeanTest.findBeanType.executor": "Run",
-    "Gradle.Tests in 'prac2.core'.executor": "Run",
-    "Gradle.Tests in 'prac2.core.member'.executor": "Run",
-    "Gradle.Tests in 'prac2.core.order'.executor": "Run",
-    "Gradle.prac2.core.member.MemberServiceTets and 1 more (1).executor": "Run",
-    "Gradle.prac2.core.member.MemberServiceTets and 1 more.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.CoreApplication.executor": "Run",
-    "Spring Boot.Prac3ServletApplication.executor": "Run",
-    "Spring Boot.Prac4SpringmvcApplication.executor": "Run",
-    "Spring Boot.Prac6LoginApplication.executor": "Run",
-    "Spring Boot.RegistrationApplication.executor": "Run",
-    "Spring Boot.SpringmvcApplication.executor": "Run",
-    "Spring Boot.ThymeleafApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/june/Desktop/kopring_workspace/prac7_login/src/main/resources/static/css",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "project.kotlinCompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.AllBeanTest.findAllBean.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AutoAppConfigTest.findBeanWithAutoAppConfig.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AutowiredOptionTest.autowiredOption.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BeanLifecycleTest.beanLifecycleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BeanScopeTest.prototypeBeanScopeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build prac2_core.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build prac3_servlet.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build prac4_springmvc.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build prac5_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build prac7_login.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ComponentFilterTest.excludeFilter.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ComponentFilterTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ItemRepoTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ItemRepoTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ItemRepoTest.findById.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ItemRepoTest.save.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ItemRepoTest.update.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MemberRepoTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MemberRepoTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MemberRepoTest.save.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MemberServiceTets.join.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrderServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrderServiceTest.할인정책이반영된주문을만든다.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SingletonServiceTest.singletonServiceIsSingleton.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SingletonServiceTest.singletonSpringBeanParam.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SingletonServiceTest.singletonSpringContainerInstance.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpringBeanTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpringBeanTest.findAllBean.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpringBeanTest.findBeanByTypeDuplicate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpringBeanTest.findBeanName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpringBeanTest.findBeanName_X.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpringBeanTest.findBeanType.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'prac2.core'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'prac2.core.member'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'prac2.core.order'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.prac2.core.member.MemberServiceTets and 1 more (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.prac2.core.member.MemberServiceTets and 1 more.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CoreApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Prac3ServletApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Prac4SpringmvcApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Prac6LoginApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.RegistrationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringmvcApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ThymeleafApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/june/Desktop/kopring_workspace/prac7_login/src/main/resources/static/css&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\june\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\june\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\june\Desktop\kopring_workspace\prac7_login\src\main\resources\static\css" />
@@ -364,7 +361,8 @@
       <workItem from="1718031891147" duration="76210000" />
       <workItem from="1718369754934" duration="12979000" />
       <workItem from="1718390483465" duration="86319000" />
-      <workItem from="1718919471867" duration="49756000" />
+      <workItem from="1718919471867" duration="54406000" />
+      <workItem from="1719190513212" duration="19035000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
@@ -454,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718964157527</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=":cookie:Login - 쿠키,세션 적용 학습 上&#10;- CookieValue()를 통해 쿠키 및 세션 적용&#10;- Servlet http 세션 적용">
+      <option name="closed" value="true" />
+      <created>1719132216125</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719132216125</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +489,8 @@
     <MESSAGE value=":notebook:Thymeleaf 체크박스, 라디오, 선택목록 학습" />
     <MESSAGE value=":zap:Validation- requestBody validation controller 학습" />
     <MESSAGE value=":tada:Login - 쿠키,세션 학습 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value=":tada:Login - 쿠키,세션 학습 시작" />
+    <MESSAGE value=":cookie:Login - 쿠키,세션 적용 학습 上&#10;- CookieValue()를 통해 쿠키 및 세션 적용&#10;- Servlet http 세션 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value=":cookie:Login - 쿠키,세션 적용 학습 上&#10;- CookieValue()를 통해 쿠키 및 세션 적용&#10;- Servlet http 세션 적용" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
