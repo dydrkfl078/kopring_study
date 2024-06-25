@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":notebook: 필터, 인터셉터 학습">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,9 +78,9 @@
         <option value="JUnit5 Test Class" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
-        <option value="HTML File" />
         <option value="Kotlin Annotation" />
         <option value="Kotlin Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -119,6 +116,7 @@
     "Gradle.Build prac4_springmvc.executor": "Run",
     "Gradle.Build prac5_registration.executor": "Run",
     "Gradle.Build prac7_login.executor": "Run",
+    "Gradle.Build prac8_error.executor": "Run",
     "Gradle.ComponentFilterTest.excludeFilter.executor": "Run",
     "Gradle.ComponentFilterTest.executor": "Run",
     "Gradle.ItemRepoTest.executor": "Run",
@@ -156,6 +154,7 @@
     "Spring Boot.Prac3ServletApplication.executor": "Run",
     "Spring Boot.Prac4SpringmvcApplication.executor": "Run",
     "Spring Boot.Prac6LoginApplication.executor": "Run",
+    "Spring Boot.Prac8ErrorApplication.executor": "Run",
     "Spring Boot.RegistrationApplication.executor": "Run",
     "Spring Boot.SpringmvcApplication.executor": "Run",
     "Spring Boot.ThymeleafApplication.executor": "Run",
@@ -225,7 +224,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Prac6LoginApplication">
+  <component name="RunManager" selected="Spring Boot.Prac8ErrorApplication">
     <configuration name="ItemRepoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -373,7 +372,7 @@
       <workItem from="1718369754934" duration="12979000" />
       <workItem from="1718390483465" duration="86319000" />
       <workItem from="1718919471867" duration="54406000" />
-      <workItem from="1719190513212" duration="25466000" />
+      <workItem from="1719190513212" duration="28295000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
