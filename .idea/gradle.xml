@@ -74,6 +74,15 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/prac8_error" />
+        <option name="gradleJvm" value="graalvm-jdk-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/prac8_error" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
