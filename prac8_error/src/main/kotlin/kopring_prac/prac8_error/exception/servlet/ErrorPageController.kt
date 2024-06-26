@@ -1,6 +1,7 @@
 package kopring_prac.prac8_error.exception.servlet
 
 import io.github.oshai.kotlinlogging.KotlinLogging
+import jakarta.servlet.RequestDispatcher
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
 import org.springframework.stereotype.Controller
@@ -25,5 +26,9 @@ class ErrorPageController {
         logger.info { "500 오류 발생!" }
 
         return "error-page/500"
+    }
+
+    private fun printError(){
+        val requestDispatcher = RequestDispatcher.FORWARD_REQUEST_URI
     }
 }
