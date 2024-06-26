@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":notebook: 필터, 인터셉터 학습">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/exception/servlet/ErrorPageController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/exception/servlet/ErrorPageController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/WebServerCustomizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/WebServerCustomizer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +80,8 @@
         <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Annotation" />
-        <option value="HTML File" />
         <option value="Kotlin Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -374,7 +374,7 @@
       <workItem from="1718390483465" duration="86319000" />
       <workItem from="1718919471867" duration="54406000" />
       <workItem from="1719190513212" duration="31755000" />
-      <workItem from="1719370351118" duration="5492000" />
+      <workItem from="1719370351118" duration="7109000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
