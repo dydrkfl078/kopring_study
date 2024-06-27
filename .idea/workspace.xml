@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":notebook: Spring ControllerAdvice&#10;- Controller 에서 비즈니스 로직과 별도로 분리하여 관리&#10;- 원하는 Controller 에 ExceptionHandler 적용하기.">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":notebook: Spring ControllerAdvice&#10;- Controller 에서 비즈니스 로직과 별도로 분리하여 관리&#10;- 원하는 Controller 에 ExceptionHandler 적용하기." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -374,7 +371,7 @@
       <workItem from="1718390483465" duration="86319000" />
       <workItem from="1718919471867" duration="54406000" />
       <workItem from="1719190513212" duration="31755000" />
-      <workItem from="1719370351118" duration="26514000" />
+      <workItem from="1719370351118" duration="26870000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
