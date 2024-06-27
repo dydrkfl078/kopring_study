@@ -22,6 +22,6 @@ class ServletExController {
 
     @GetMapping("/error-500")
     fun error500(response: HttpServletResponse) {
-        response.sendError(500)
+        response.sendError(500,"잘못된 사용자")
     }
 }
