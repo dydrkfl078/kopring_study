@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":notebook: 필터, 인터셉터 학습">
+    <list default="true" id="77ecfbdb-76b5-4ec8-9caa-c03ed4152a2a" name="Changes" comment=":notebook: Spring ControllerAdvice&#10;- Controller 에서 비즈니스 로직과 별도로 분리하여 관리&#10;- 원하는 Controller 에 ExceptionHandler 적용하기.">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/WebConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/WebConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/WebServerCustomizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/WebServerCustomizer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/exception/servlet/ErrorPageController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/exception/servlet/ErrorPageController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/exception/servlet/ServletExController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/prac8_error/src/main/kotlin/kopring_prac/prac8_error/exception/servlet/ServletExController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac8_error/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/prac8_error/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac8_error/src/main/resources/templates/error-page/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/prac8_error/src/main/resources/templates/error-page/400.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prac8_error/src/main/resources/templates/error/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/prac8_error/src/main/resources/templates/error/400.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +374,7 @@
       <workItem from="1718390483465" duration="86319000" />
       <workItem from="1718919471867" duration="54406000" />
       <workItem from="1719190513212" duration="31755000" />
-      <workItem from="1719370351118" duration="24388000" />
+      <workItem from="1719370351118" duration="26514000" />
     </task>
     <task id="LOCAL-00001" summary=":books:RequestBody - String 학습&#10;1. HttpServletRequest.inputStream 으로 바디 값 가져오기.&#10;2. InputStream 에서 바로 Stream 바디 값 가져오기.&#10;3. HttpEntity&lt;String&gt;으로 String 바디 값 가져오기.&#10;4. @RequestBody 로 HTTP 요청의 바디 값을 받아오기.">
       <option name="closed" value="true" />
@@ -486,7 +480,31 @@
       <option name="project" value="LOCAL" />
       <updated>1719220164540</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=":notebook: HandlerExceptionResolver 학습">
+      <option name="closed" value="true" />
+      <created>1719458465297</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1719458465299</updated>
+    </task>
+    <task id="LOCAL-00015" summary=":notebook: Spring ExceptionHandler 학습&#10;- 하위 class Exception Handler&#10;- 상위 class ExceptionHandler&#10;- 커스텀 exceptionClass Handler">
+      <option name="closed" value="true" />
+      <created>1719458920585</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719458920585</updated>
+    </task>
+    <task id="LOCAL-00016" summary=":notebook: Spring ControllerAdvice&#10;- Controller 에서 비즈니스 로직과 별도로 분리하여 관리&#10;- 원하는 Controller 에 ExceptionHandler 적용하기.">
+      <option name="closed" value="true" />
+      <created>1719458997123</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1719458997123</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +535,10 @@
     <MESSAGE value=":tada:Login - 쿠키,세션 학습 시작" />
     <MESSAGE value=":cookie:Login - 쿠키,세션 적용 학습 上&#10;- CookieValue()를 통해 쿠키 및 세션 적용&#10;- Servlet http 세션 적용" />
     <MESSAGE value=":notebook: 필터, 인터셉터 학습" />
-    <option name="LAST_COMMIT_MESSAGE" value=":notebook: 필터, 인터셉터 학습" />
+    <MESSAGE value=":notebook: HandlerExceptionResolver 학습" />
+    <MESSAGE value=":notebook: Spring ExceptionHandler 학습&#10;- 하위 class Exception Handler&#10;- 상위 class ExceptionHandler&#10;- 커스텀 exceptionClass Handler" />
+    <MESSAGE value=":notebook: Spring ControllerAdvice&#10;- Controller 에서 비즈니스 로직과 별도로 분리하여 관리&#10;- 원하는 Controller 에 ExceptionHandler 적용하기." />
+    <option name="LAST_COMMIT_MESSAGE" value=":notebook: Spring ControllerAdvice&#10;- Controller 에서 비즈니스 로직과 별도로 분리하여 관리&#10;- 원하는 Controller 에 ExceptionHandler 적용하기." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
