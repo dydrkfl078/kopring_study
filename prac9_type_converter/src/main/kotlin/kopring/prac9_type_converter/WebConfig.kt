@@ -12,12 +12,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
 @Configuration
 class WebConfig : WebMvcConfigurer {
 
-    override fun addFormatters(registry: FormatterRegistry) {
+//    override fun addFormatters(registry: FormatterRegistry) {
 //        registry.addConverter(IntToStringConverter())
 //        registry.addConverter(StringToIntConverter())
 //        registry.addConverter(IpPortToStringConverter())
 //        registry.addConverter(StringToIpPortConverter())
-
-        registry.addFormatter(MyNumberFormatter())
-    }
+//
+//        registry.addFormatter(MyNumberFormatter())
+//    }
 }

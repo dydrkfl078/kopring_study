@@ -5,9 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-<form th:object="${formatterForm}" th:method="post">
-    number <input type="text" th:field="*{formNumber}"><br/>
-    localDateTime <input type="text" th:field="*{date}"><br/>
+<form th:action="@{/formatter/edit}" th:object="${formatterForm}" th:method="post">
+    number <input type="text" id="formNumber" th:field="*{formNumber}"><br/>
+    localDateTime <input type="text" id="date" th:field="*{date}"><br/>
     <input type="submit"/>
 </form>
 </body>

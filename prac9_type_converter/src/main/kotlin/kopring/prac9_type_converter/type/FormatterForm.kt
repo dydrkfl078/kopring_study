@@ -4,12 +4,11 @@ import org.springframework.format.annotation.DateTimeFormat
 import org.springframework.format.annotation.NumberFormat
 import java.time.LocalDateTime
 
-class FormatterForm (
+data class FormatterForm (
 
-    @NumberFormat(pattern = "###,###")
-    val formNumber : Int,
+    @field: NumberFormat(pattern = "#,###")
+    val formNumber : Double,
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @field: DateTimeFormat(iso = DateTimeFormat.ISO.NONE, pattern = "yyyy,MM,dd HH:mm:ss:SSS")
     val date : LocalDateTime
-) {
-}
+)

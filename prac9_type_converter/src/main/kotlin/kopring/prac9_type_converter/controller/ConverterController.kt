@@ -30,6 +30,4 @@ class ConverterController {
     }
 }
 
-class Form(val ipPort: IpPort){
-
-}
+class Form(val ipPort: IpPort){}
