@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h4 class="mb-3"> 상품 입력</h4>
+<form method="post" enctype="multipart/form-data">
+    <ul>
+        <li>상품명 <input type="text" name="itemName"></li>
+        <li>파일 <input type="file" name="file"></li>
+    </ul>
+    <input type="submit" th:text="제출">
+</form>
+
+</body>
+</html>
