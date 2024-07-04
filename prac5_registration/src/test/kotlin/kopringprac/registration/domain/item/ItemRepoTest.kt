@@ -21,7 +21,7 @@ class ItemRepoTest{
     @Test
     fun save(){
         //given
-        val item = Item("itemA",1000,10)
+        val item = Item(itemName = "itemA", price = 1000, quantity = 10)
 
         //when
         itemRepo.save(item)
@@ -33,8 +33,8 @@ class ItemRepoTest{
     @Test
     fun findAll(){
         // given
-        val itemA = Item("itemA",1000,10)
-        val itemB = Item("itemB",5000,40)
+        val itemA = Item(itemName = "itemA", price = 1000, quantity = 10)
+        val itemB = Item(itemName = "itemB", price = 5000, quantity = 40)
         itemRepo.save(itemA)
         itemRepo.save(itemB)
 
@@ -48,13 +48,13 @@ class ItemRepoTest{
     @Test
     fun update(){
         // given
-        val itemA = Item("itemA",1000,10)
-        val itemB = Item("itemB",5000,40)
+        val itemA = Item(itemName = "itemA", price = 1000, quantity = 10)
+        val itemB = Item(itemName = "itemB", price = 5000, quantity = 40)
         itemRepo.save(itemA)
         itemRepo.save(itemB)
 
         // when
-        val updateItem = Item("updateItem",5000,30)
+        val updateItem = Item(itemName = "updateItem", price = 5000, quantity = 30)
         itemRepo.update(2,updateItem)
         val result = itemRepo.findById(2)
 
