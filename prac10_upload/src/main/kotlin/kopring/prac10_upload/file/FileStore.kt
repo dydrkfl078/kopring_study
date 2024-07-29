@@ -1,9 +1,11 @@
 package kopring.prac10_upload.file
 
+import kopring.prac10_upload.domain.Item
 import kopring.prac10_upload.domain.UploadFile
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 import org.springframework.web.multipart.MultipartFile
+import java.io.File
 import java.util.*
 
 @Component
@@ -21,12 +23,23 @@ class FileStore {
             val fileName = it
 
             val ext = extractExt(fileName)
+            val storeFileName = createStoreFileName(ext)
+            multipartFile.transferTo(File(getFullPath(storeFileName)))
 
-            createStoreFileName(ext)
-
-            return UploadFile(fileName, ext)
+            return UploadFile(fileName, storeFileName)
 
         }?: return null
+    }
+
+    fun storeFiles(multipartFileList : List<MultipartFile>) : List<UploadFile>? {
+        val storeFileResult = mutableListOf<UploadFile>()
+        multipartFileList.forEach {
+            if (!it.isEmpty) {
+                storeFileResult.add(storeFile(it)!!)
+            }
+        }
+
+        return storeFileResult
     }
 
     private fun extractExt(fileName: String): String {
