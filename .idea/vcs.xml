@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kopring_study_db" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/prac1_intro" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/prac2_core" vcs="Git" />
   </component>
