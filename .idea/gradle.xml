@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/kopring_study_db" />
+            <option value="$PROJECT_DIR$/kopring_study_db/prac1_jdbc" />
           </set>
         </option>
       </GradleProjectSettings>
