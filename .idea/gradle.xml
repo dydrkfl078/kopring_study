@@ -10,6 +10,9 @@
           <set>
             <option value="$PROJECT_DIR$/kopring_study_db" />
             <option value="$PROJECT_DIR$/kopring_study_db/prac1_jdbc" />
+            <option value="$PROJECT_DIR$/kopring_study_db/prac2_jdbc_exception" />
+            <option value="$PROJECT_DIR$/kopring_study_db/prac3_jdbc_template" />
+            <option value="$PROJECT_DIR$/kopring_study_db/prac4_db_application" />
           </set>
         </option>
       </GradleProjectSettings>
