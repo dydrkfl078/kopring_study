@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/kopring_study_db/prac2_jdbc_exception" />
             <option value="$PROJECT_DIR$/kopring_study_db/prac3_jdbc_template" />
             <option value="$PROJECT_DIR$/kopring_study_db/prac4_db_application" />
+            <option value="$PROJECT_DIR$/kopring_study_db/prac5_spring_transaction" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -22,6 +23,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/prac10_upload" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/prac11_advanced" />
+        <option name="gradleJvm" value="graalvm-jdk-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/prac11_advanced" />
           </set>
         </option>
       </GradleProjectSettings>
