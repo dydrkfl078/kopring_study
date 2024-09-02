@@ -20,7 +20,7 @@ class OrderRepositoryV3 (
         var status : TraceStatus? = null
 
         try {
-            status = logger.begin("OrderRepositoryV1.save()")
+            status = logger.begin("OrderRepositoryV3.save()")
 
             if (itemName == ERROR_NAME) {
                 throw IllegalArgumentException("예외 발생")

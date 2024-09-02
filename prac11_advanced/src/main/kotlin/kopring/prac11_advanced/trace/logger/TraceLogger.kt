@@ -1,6 +1,5 @@
 package kopring.prac11_advanced.trace.logger
 
-import kopring.prac11_advanced.trace.TraceId
 import kopring.prac11_advanced.trace.TraceStatus
 
 interface TraceLogger {

@@ -1,9 +1,7 @@
 package kopring.prac11_advanced.v3
 
 import kopring.prac11_advanced.trace.TraceStatus
-import kopring.prac11_advanced.trace.logger.FieldLogTrace
 import kopring.prac11_advanced.trace.logger.TraceLogger
-import kopring.prac11_advanced.trace.logger.TraceLoggerV2
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
