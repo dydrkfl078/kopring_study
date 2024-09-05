@@ -1,8 +1,8 @@
-package kopring.prac11_advanced.v1_decorator.decorator
+package kopring.prac11_advanced.proxy_v1_decorator.decorator
 
 import kopring.prac11_advanced.trace.TraceStatus
 import kopring.prac11_advanced.trace.logger.TraceLogger
-import kopring.prac11_advanced.v1_decorator.DecoOrderRepositoryV1
+import kopring.prac11_advanced.proxy_v1_decorator.DecoOrderRepositoryV1
 
 class DecoOrderRepositoryProxyV1(
     private val target : DecoOrderRepositoryV1,

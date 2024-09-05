@@ -1,4 +1,4 @@
-package kopring.prac11_advanced.v2_concreteproxy
+package kopring.prac11_advanced.proxy_v2_concrete
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping

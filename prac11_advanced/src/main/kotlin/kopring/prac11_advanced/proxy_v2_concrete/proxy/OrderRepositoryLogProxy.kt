@@ -1,8 +1,8 @@
-package kopring.prac11_advanced.v2_concreteproxy.proxy
+package kopring.prac11_advanced.proxy_v2_concrete.proxy
 
 import kopring.prac11_advanced.trace.TraceStatus
 import kopring.prac11_advanced.trace.logger.TraceLogger
-import kopring.prac11_advanced.v2_concreteproxy.ProxyOrderRepositoryV2
+import kopring.prac11_advanced.proxy_v2_concrete.ProxyOrderRepositoryV2
 
 class OrderRepositoryLogProxy(
     private val trace: TraceLogger,

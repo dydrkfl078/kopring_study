@@ -1,9 +1,9 @@
-package kopring.prac11_advanced.v2_concreteproxy
+package kopring.prac11_advanced.proxy_v2_concrete
 
 import kopring.prac11_advanced.trace.logger.TraceLogger
-import kopring.prac11_advanced.v2_concreteproxy.proxy.OrderControllerLogProxy
-import kopring.prac11_advanced.v2_concreteproxy.proxy.OrderRepositoryLogProxy
-import kopring.prac11_advanced.v2_concreteproxy.proxy.OrderServiceLogProxy
+import kopring.prac11_advanced.proxy_v2_concrete.proxy.OrderControllerLogProxy
+import kopring.prac11_advanced.proxy_v2_concrete.proxy.OrderRepositoryLogProxy
+import kopring.prac11_advanced.proxy_v2_concrete.proxy.OrderServiceLogProxy
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 

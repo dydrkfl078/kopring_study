@@ -1,4 +1,4 @@
-package kopring.prac11_advanced.v1_decorator
+package kopring.prac11_advanced.proxy_v1_decorator
 
 interface DecoOrderRepositoryV1 {
     companion object {

@@ -1,8 +1,8 @@
-package kopring.prac11_advanced.v1_decorator
+package kopring.prac11_advanced.proxy_v1_decorator
 
 import kopring.prac11_advanced.trace.logger.TraceLogger
-import kopring.prac11_advanced.v1_decorator.decorator.DecoOrderRepositoryProxyV1
-import kopring.prac11_advanced.v1_decorator.decorator.DecoOrderServiceProxyV1
+import kopring.prac11_advanced.proxy_v1_decorator.decorator.DecoOrderRepositoryProxyV1
+import kopring.prac11_advanced.proxy_v1_decorator.decorator.DecoOrderServiceProxyV1
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 

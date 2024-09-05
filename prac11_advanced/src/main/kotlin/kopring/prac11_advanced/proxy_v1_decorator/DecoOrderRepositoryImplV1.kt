@@ -1,7 +1,6 @@
-package kopring.prac11_advanced.v1_decorator
+package kopring.prac11_advanced.proxy_v1_decorator
 
 import io.github.oshai.kotlinlogging.KotlinLogging
-import org.springframework.stereotype.Repository
 
 private val logger = KotlinLogging.logger {  }
 
