@@ -3,20 +3,13 @@ package kopring.prac11_advanced.proxy_v4_cglib
 import kopring.prac11_advanced.trace.TraceStatus
 import kopring.prac11_advanced.trace.logger.TraceLogger
 import org.aopalliance.intercept.MethodInvocation
-import org.springframework.cglib.proxy.MethodProxy
-import java.lang.reflect.Method
 import org.springframework.util.PatternMatchUtils
 
-class TraceLoggerHandlerCglib(
+class TraceLoggerAdvice(
     private val trace: TraceLogger,
-    private val patterns: Array<String>
 ) : org.aopalliance.intercept.MethodInterceptor {
 
     override fun invoke(invocation: MethodInvocation): Any? {
-
-        if (!PatternMatchUtils.simpleMatch(patterns,invocation.method.name)) {
-            return invocation.proceed()
-        }
 
         var status : TraceStatus? = null
 
