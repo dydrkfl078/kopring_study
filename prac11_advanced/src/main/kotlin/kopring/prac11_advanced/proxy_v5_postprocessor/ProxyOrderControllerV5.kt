@@ -14,8 +14,8 @@ class ProxyOrderControllerV5(
 ) {
 
     @GetMapping("/request")
-    fun request(@RequestParam itemName: String): String {
-        orderService.save(itemName)
+    fun requestProxy(@RequestParam itemName: String): String {
+        orderService.saveProxy(itemName)
         return "$itemName ok"
     }
 }

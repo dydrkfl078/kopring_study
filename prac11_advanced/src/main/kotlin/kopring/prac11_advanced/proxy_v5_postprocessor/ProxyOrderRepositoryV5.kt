@@ -12,7 +12,7 @@ class ProxyOrderRepositoryV5(
         const val ERROR_NAME = "예외"
     }
 
-    fun save(itemName: String) {
+    fun saveProxy(itemName: String) {
         if (itemName.contains(ERROR_NAME)) {
             throw IllegalArgumentException("예외 발생")
         }

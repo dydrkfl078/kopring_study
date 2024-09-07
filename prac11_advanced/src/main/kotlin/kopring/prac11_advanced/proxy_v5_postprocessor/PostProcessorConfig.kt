@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Bean
 
 private val logger = KotlinLogging.logger {  }
 
-@Configuration
+// AutoPostProcessorConfig 사용으로 주석처리.
+//@Configuration
 class PostProcessorConfig {
 
     @Bean

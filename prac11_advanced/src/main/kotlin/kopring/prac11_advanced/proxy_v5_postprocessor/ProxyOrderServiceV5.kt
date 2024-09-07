@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service
 class ProxyOrderServiceV5(
     private val orderRepo: ProxyOrderRepositoryV5,
 ) {
-    fun save(itemName: String) {
-        orderRepo.save(itemName)
+    fun saveProxy(itemName: String) {
+        orderRepo.saveProxy(itemName)
 
     }
 }
