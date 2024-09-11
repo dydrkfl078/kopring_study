@@ -36,6 +36,15 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/prac12_aop" />
+        <option name="gradleJvm" value="graalvm-jdk-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/prac12_aop" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="delegatedBuild" value="false" />
         <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/prac1_intro" />
