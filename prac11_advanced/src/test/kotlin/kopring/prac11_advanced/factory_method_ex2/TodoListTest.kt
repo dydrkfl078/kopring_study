@@ -12,8 +12,8 @@ class TodoListTest {
     fun todoListTest() {
         val studyTodoList = TodoList()
 
-        studyTodoList.addCategory(CalendarFactory())
-        studyTodoList.addCategory(DropdownMenuFactory())
+        studyTodoList.addCategory(CalendarFactory)
+        studyTodoList.addCategory(DropdownMenuFactory.instance)
 
         studyTodoList.addTask()
         studyTodoList.addTask()
