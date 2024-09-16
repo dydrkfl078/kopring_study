@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Pointcut
 
 private val logger = KotlinLogging.logger {  }
 
-@Aspect
+//@Aspect
 class AspectV1 {
 
     // V1 - 포인트 컷을 분리하지 않는 Aspect

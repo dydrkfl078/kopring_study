@@ -2,7 +2,7 @@ package kopring.prac12_aop.aop
 import io.github.oshai.kotlinlogging.KotlinLogging
 import kopring.prac12_aop.order.OrderRepository
 import kopring.prac12_aop.order.OrderService
-import kopring.prac12_aop.order.aop.AspectV1
+import kopring.prac12_aop.order.aop.*
 import org.junit.jupiter.api.Test
 import org.springframework.aop.support.AopUtils
 import org.springframework.beans.factory.annotation.Autowired
@@ -12,7 +12,9 @@ import org.springframework.context.annotation.Import
 private val logger = KotlinLogging.logger {  }
 
 @SpringBootTest
-@Import(AspectV1::class)
+//@Import(AspectV2Pointcut::class)
+//@Import(LogAspect::class, TxAspect::class)
+@Import(AspectV4SeparateAdvice::class)
 class AopTest {
 
     @Autowired
