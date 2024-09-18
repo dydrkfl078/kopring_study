@@ -56,7 +56,7 @@ class AtTargetAtWithin {
 class AtTargetAtWithinAspect() {
 
     // @target = 실행 객체가 설정된 타입의 Annotation 이 있는 경우에 조인 포인트로 설정된다.
-    // --> 하위 클래스에서 해당 객체를 상속할 경우에도 해당된다
+    // --> target 으로 지정한 Annotation 이 붙은 객체를 상속하는 하위 클래스의 경우에도 포인트 컷 범위에 해당된다
 //    @Around("execution(* kopring.prac12_aop.aop.pointcut..*(..)) && @target(kopring.prac12_aop.member.annotation.ClassAop)")
     fun atTarget(joinPoint : ProceedingJoinPoint): Any {
         logger.info { "[@target] = ${joinPoint.signature} " }
@@ -64,7 +64,7 @@ class AtTargetAtWithinAspect() {
     }
 
     // @within = 주어진 Annotation 이 있는 타입 내부들만 조인포인트로 설정된다.
-    // --> 하위 클래스에서 within 으로 지정된 Annotation 이 설정된 객체를 상속할 경우에는 해당되지 않음.
+    // --> within 으로 지정한 Annotation 이 붙은 객체를 상속하는 하위 클래스의 경우에는 포인트 컷 범위에 해당되지 않는다.
     @Around("execution(* kopring.prac12_aop.aop.pointcut..*(..)) && @within(kopring.prac12_aop.member.annotation.ClassAop)")
     fun atWithin(joinPoint : ProceedingJoinPoint): Any {
         logger.info { "[@within] = ${joinPoint.signature} " }
