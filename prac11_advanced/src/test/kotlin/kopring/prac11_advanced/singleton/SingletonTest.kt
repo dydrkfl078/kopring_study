@@ -1,52 +1,48 @@
 package kopring.prac11_advanced.singleton
 
-import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.context.annotation.Import
-import org.springframework.stereotype.Service
 import io.github.oshai.kotlinlogging.KotlinLogging
+import io.kotest.matchers.shouldBe
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 private val logger = KotlinLogging.logger {  }
-@SpringBootTest
-@Import(SingletonTestService::class)
 class SingletonTest {
 
-    @Autowired
-    private lateinit var testA : SingletonTestService
-
-    @Autowired
-    private lateinit var testB : SingletonTestService
-
-    @Autowired
-    private lateinit var testC : SingletonTestService
-
-    @Test
-    fun singletonTest(){
-        testA.addNum()
-        testB.addNum()
-
-        testA.displayNum() // 2
-        testB.displayNum() // 2
+    @BeforeEach
+    fun bookmarkTest(){
+        addBookmark("naver.com","네이버")
+        addBookmark("google.com","구글")
+        addBookmark("daum.com","다음")
+        addBookmark("facebook.com","페이스북")
+        addBookmark("amazon.com","아마존")
     }
 
     @Test
-    fun singletonTest2() {
-        testA.displayNum() // 0
-        testA.addNum()
-        testC.displayNum() // 1
-    }
-}
+    fun readAllBookmarkTest() {
+        // given
+        val myBookmark = MyBookmarkFactory.myBookmark
 
-@Service
-class SingletonTestService() {
-    private var num = 0
+        // when
+        val result = myBookmark.readAllBookmark()
 
-    fun addNum(){
-        num++
+        // then
+        logger.info { result }
+        result.size shouldBe 5
     }
 
-    fun displayNum() {
-        logger.info { "[num] = $num" }
+    private fun addBookmark(url: String, desc: String){
+        val myBookmark = MyBookmarkFactory.myBookmark
+
+        myBookmark.addBookmark(url, desc)
+    }
+
+    /*
+    *  Companion object
+    */
+
+    private fun addBookmarkCompanion(url: String, desc: String) {
+        val myBookmark = CompanionMyBookmark.instance
+
+        myBookmark.addBookmark(url, desc)
     }
 }
